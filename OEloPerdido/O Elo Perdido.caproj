@@ -1,0 +1,3062 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>O Elo Perdido</name>
+    <description></description>
+    <version>2.0.0.0</version>
+    <author>Fernanda, Karol e Paula</author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id></app-id>
+    <unique-id>3fna03ht38n70</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="video" version="1">Video</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Car" version="1">Car</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Extras">
+            <object-type name="Keyboard" sid="342530493967214">
+                <plugin id="Keyboard" />
+            </object-type>
+            <object-type name="Mouse" sid="945445384046278">
+                <plugin id="Mouse" />
+            </object-type>
+            <object-type name="Browser" sid="173263620797501">
+                <plugin id="Browser" />
+            </object-type>
+            <object-type name="Camera" sid="764573004845172">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="ScrollTo" sid="478027731891469">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="555356392303952" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Marcador" sid="528488149552478">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="579802085656989" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Audio" sid="696955663085296">
+                <plugin id="Audio" />
+            </object-type>
+            <object-type name="Box_de_fala" sid="994288901125515">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="860229141954747" speed="5">
+                        <frame duration="1" hotspotX="0.501901" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\box-caral.png">
+                            <collision-poly>
+                                <point x="0.00380228" y="0.0227273" />
+                                <point x="0.498099" y="0" />
+                                <point x="0.996198" y="0.0227273" />
+                                <point x="0.946768" y="0.5" />
+                                <point x="0.996198" y="0.977273" />
+                                <point x="0.00380228" y="0.977273" />
+                                <point x="0.0532319" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Layouts">
+            <object-folder name="Menu">
+                <object-type name="NomeJogo" sid="903391030952688">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="432487572787719" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.500495" original-source="C:\Users\Usuário\Downloads\logo1.png">
+                                <collision-poly>
+                                    <point x="0.0553881" y="0.103858" />
+                                    <point x="0.495479" y="0.361029" />
+                                    <point x="0.897136" y="0.205737" />
+                                    <point x="0.964582" y="0.5727" />
+                                    <point x="0.91899" y="0.998022" />
+                                    <point x="0.495479" y="0.988131" />
+                                    <point x="0.152223" y="0.788328" />
+                                    <point x="0.00037679" y="0.5727" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="ButtonExit" sid="313719489773007">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="655192735216227" speed="5">
+                            <frame duration="1" hotspotX="0.517857" hotspotY="0.509434" original-source="C:\Users\Usuário\Downloads\botão-sair.png">
+                                <collision-poly>
+                                    <point x="0.0553571" y="0.0330189" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.958929" y="0.0235849" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.951786" y="0.966981" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0.0357143" y="0.971698" />
+                                    <point x="0" y="0.396226" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="ButtonPlay" sid="432005698380528">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="736703516801251" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.497696" original-source="C:\Users\Usuário\Downloads\botão-jogar.png">
+                                <collision-poly>
+                                    <point x="0.0368663" y="0.934483" />
+                                    <point x="0.0184332" y="0.5" />
+                                    <point x="0.0552995" y="0.062069" />
+                                    <point x="0.423963" y="0.012069" />
+                                    <point x="0.963134" y="0.070689" />
+                                    <point x="0.990783" y="0.5" />
+                                    <point x="0.958525" y="0.939655" />
+                                    <point x="0.423963" y="0.981035" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="ButtonConfig" sid="838151515752204">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="158035240839109" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.497696" original-source="C:\Users\Usuário\Downloads\botão-configurações.png">
+                                <collision-poly>
+                                    <point x="0.05" y="0.0460829" />
+                                    <point x="0.5" y="0.0184332" />
+                                    <point x="0.943103" y="0.0875576" />
+                                    <point x="0.987931" y="0.488479" />
+                                    <point x="0.946552" y="0.935483" />
+                                    <point x="0.5" y="0.995392" />
+                                    <point x="0.0465517" y="0.926267" />
+                                    <point x="0.0189655" y="0.423963" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="BGmenu2" sid="676586583684234">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="778636619682786" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\WhatsApp Image 2019-07-24 at 19.51.52.jpeg" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="BGmenu1" sid="404686600369750">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="188275883698089" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.500351" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\menu.png">
+                                <collision-poly>
+                                    <point x="0.00151057" y="0.00210822" />
+                                    <point x="0.998993" y="0.00140548" />
+                                    <point x="0.998489" y="0.997892" />
+                                    <point x="0.00100705" y="0.998595" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="TextConfig" sid="728983600696613">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="ObjSetas" sid="391253960485483">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="708220924116123" speed="5">
+                            <frame duration="1" hotspotX="0.579832" hotspotY="0.663522" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\setas.png">
+                                <collision-poly>
+                                    <point x="0.342437" y="0.264151" />
+                                    <point x="0.5" y="0.0125786" />
+                                    <point x="0.657563" y="0.264151" />
+                                    <point x="0.82563" y="0.987421" />
+                                    <point x="0.17437" y="0.987421" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="ObjCtrl" sid="464578501871503">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="585788482675880" speed="5">
+                            <frame duration="1" hotspotX="0.503774" hotspotY="0.504491" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\ctrl-png-3.png">
+                                <collision-poly>
+                                    <point x="0.0993711" y="0.0232036" />
+                                    <point x="0.503774" y="0.000748503" />
+                                    <point x="0.905031" y="0.0269461" />
+                                    <point x="0.998742" y="0.504491" />
+                                    <point x="0.9" y="0.976048" />
+                                    <point x="0.503774" y="0.998503" />
+                                    <point x="0.105031" y="0.979042" />
+                                    <point x="0.000628931" y="0.504491" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="ObjMouse" sid="137348833586591">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="948275291618686" speed="5">
+                            <frame duration="1" hotspotX="0.504464" hotspotY="0.5" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\mouse.png">
+                                <collision-poly>
+                                    <point x="0.772321" y="0.0862069" />
+                                    <point x="0.995536" y="0.5" />
+                                    <point x="0.774554" y="0.917241" />
+                                    <point x="0.504464" y="0.993103" />
+                                    <point x="0.198661" y="0.972414" />
+                                    <point x="0.00223213" y="0.5" />
+                                    <point x="0.198661" y="0.0275862" />
+                                    <point x="0.504464" y="0.00689655" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="MusicaOFF" sid="981108886827820">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="157218415181317" speed="5">
+                            <frame duration="1" hotspotX="0.501976" hotspotY="0.5" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\botoes\off musica.png">
+                                <collision-poly>
+                                    <point x="0.165354" y="0.133858" />
+                                    <point x="0.5" y="0.00393701" />
+                                    <point x="0.834646" y="0.133858" />
+                                    <point x="0.996063" y="0.484252" />
+                                    <point x="0.850394" y="0.850394" />
+                                    <point x="0.5" y="0.996063" />
+                                    <point x="0.149606" y="0.850394" />
+                                    <point x="0.00393701" y="0.484252" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Musica" sid="382204347531226">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="OnOff" sid="376121381898778" type="number" />
+                    </instance-variables>
+                    <animation-folder>
+                        <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="142751265451824" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.484252" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\botoes\botão-musica.png">
+                                <collision-poly>
+                                    <point x="0.165354" y="0.133858" />
+                                    <point x="0.5" y="0.00393701" />
+                                    <point x="0.834646" y="0.133858" />
+                                    <point x="0.996063" y="0.484252" />
+                                    <point x="0.850394" y="0.850394" />
+                                    <point x="0.5" y="0.996063" />
+                                    <point x="0.149606" y="0.850394" />
+                                    <point x="0.00393701" y="0.484252" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.486275" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\botoes\off musica.png">
+                                <collision-poly>
+                                    <point x="0.161417" y="0.137255" />
+                                    <point x="0.496063" y="0.00784314" />
+                                    <point x="0.834646" y="0.137255" />
+                                    <point x="0.996063" y="0.486275" />
+                                    <point x="0.850394" y="0.85098" />
+                                    <point x="0.496063" y="0.992157" />
+                                    <point x="0.149606" y="0.847059" />
+                                    <point x="0.00393701" y="0.486275" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="EfeitosOFF" sid="321221380208484">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="233339149725124" speed="5">
+                            <frame duration="1" hotspotX="0.501961" hotspotY="0.5" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\botoes\som off.png">
+                                <collision-poly>
+                                    <point x="0.167979" y="0.109461" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.832021" y="0.113491" />
+                                    <point x="0.992172" y="0.468132" />
+                                    <point x="0.847646" y="0.842923" />
+                                    <point x="0.5" y="0.992033" />
+                                    <point x="0.15626" y="0.842923" />
+                                    <point x="0.0078277" y="0.468132" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="EfeitosON" sid="470155544242006">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="816008406063007" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\botoes\som on.png">
+                                <collision-poly>
+                                    <point x="0.165354" y="0.133858" />
+                                    <point x="0.5" y="0.00393701" />
+                                    <point x="0.834646" y="0.137795" />
+                                    <point x="0.996063" y="0.484252" />
+                                    <point x="0.850394" y="0.850394" />
+                                    <point x="0.5" y="0.996063" />
+                                    <point x="0.153543" y="0.850394" />
+                                    <point x="0.00393701" y="0.484252" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="HUD">
+                <object-type name="ButtonPause" sid="430312742617685">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="526995762864004" speed="5">
+                            <frame duration="1" hotspotX="0.504587" hotspotY="0.394495" original-source="C:\Users\Usuário\Downloads\pause.png">
+                                <collision-poly>
+                                    <point x="0.266055" y="0.0733945" />
+                                    <point x="0.495413" y="0.0183486" />
+                                    <point x="0.733945" y="0.0733945" />
+                                    <point x="0.981651" y="0.40367" />
+                                    <point x="0.844037" y="0.844037" />
+                                    <point x="0.495413" y="0.990826" />
+                                    <point x="0.155963" y="0.844037" />
+                                    <point x="0.0275229" y="0.40367" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Mochila" sid="308975141610184">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="832776083080835" speed="5">
+                            <frame duration="1" hotspotX="0.501558" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\mochila aberta.png" />
+                            <frame duration="1" hotspotX="0.501859" hotspotY="0.5" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\mochila-fechada.png">
+                                <collision-poly>
+                                    <point x="0.144981" y="0.129139" />
+                                    <point x="0.498141" y="0.00662252" />
+                                    <point x="0.873606" y="0.112583" />
+                                    <point x="0.981413" y="0.5" />
+                                    <point x="0.895911" y="0.907285" />
+                                    <point x="0.498141" y="0.996689" />
+                                    <point x="0.063197" y="0.943709" />
+                                    <point x="0.00371747" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Textos" sid="906329934106297">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="CaixaInventario" sid="182908082146962">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="284164046799749" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\caixa do inventario.png">
+                                <collision-poly>
+                                    <point x="0.1" y="0.1" />
+                                    <point x="0.5" y="0.0222222" />
+                                    <point x="0.9" y="0.1" />
+                                    <point x="0.977778" y="0.5" />
+                                    <point x="0.9" y="0.9" />
+                                    <point x="0.5" y="0.988889" />
+                                    <point x="0.0888889" y="0.911111" />
+                                    <point x="0.0111111" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Score" sid="599346623227973">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="CaixaPoder" sid="935964862372703">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="860589984072427" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\caixa do inventario.png">
+                                <collision-poly>
+                                    <point x="0.1" y="0.1" />
+                                    <point x="0.5" y="0.0222222" />
+                                    <point x="0.9" y="0.1" />
+                                    <point x="0.977778" y="0.5" />
+                                    <point x="0.9" y="0.9" />
+                                    <point x="0.5" y="0.988889" />
+                                    <point x="0.0888889" y="0.911111" />
+                                    <point x="0.0111111" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="BoxInventario" sid="532361572047200">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="691901340723821" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="ButtonClose" sid="137089570806947">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="970721852683326" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.501114" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\closebutton.png">
+                                <collision-poly>
+                                    <point x="0.148889" y="0.14922" />
+                                    <point x="0.5" y="0.00222717" />
+                                    <point x="0.851111" y="0.14922" />
+                                    <point x="0.995556" y="0.501114" />
+                                    <point x="0.851111" y="0.853007" />
+                                    <point x="0.5" y="0.997773" />
+                                    <point x="0.148889" y="0.853007" />
+                                    <point x="0.00222222" y="0.501114" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="TxT_HPMax" sid="244382671531665">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="INVENTCalendarioAsteca" sid="803623947814706">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="8Direction" sid="143391534923695">
+                            <behavior id="EightDir" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="960367899780823" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\jogo-tcc\pedra do sol.png">
+                                <collision-poly>
+                                    <point x="0.146814" y="0.146814" />
+                                    <point x="0.5" y="0.00138504" />
+                                    <point x="0.853186" y="0.146814" />
+                                    <point x="0.998615" y="0.5" />
+                                    <point x="0.853186" y="0.853186" />
+                                    <point x="0.5" y="0.998615" />
+                                    <point x="0.146814" y="0.853186" />
+                                    <point x="0.00138504" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="INVENTQuipo" sid="238366100114458">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="935404371718290" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\quipo.png">
+                                <collision-poly>
+                                    <point x="0.0540541" y="0.0722892" />
+                                    <point x="0.5" y="0.060241" />
+                                    <point x="0.927928" y="0.0963855" />
+                                    <point x="0.936937" y="0.5" />
+                                    <point x="0.743243" y="0.656627" />
+                                    <point x="0.707207" y="0.945784" />
+                                    <point x="0.171171" y="0.897591" />
+                                    <point x="0.175676" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="INVENTPapiro" sid="615597719122312">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Car" sid="851445911768245">
+                            <behavior id="Car" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="400119009282118" speed="5">
+                            <frame duration="1" hotspotX="0.527778" hotspotY="0.477941" original-source="C:\Users\Usuário\Downloads\jogo-tcc\papiro.png">
+                                <collision-poly>
+                                    <point x="0.0694444" y="0.0735294" />
+                                    <point x="0.523148" y="0.0477941" />
+                                    <point x="0.787037" y="0.227941" />
+                                    <point x="0.763889" y="0.477941" />
+                                    <point x="0.930556" y="0.841912" />
+                                    <point x="0.523148" y="0.948529" />
+                                    <point x="0.0972222" y="0.860294" />
+                                    <point x="0.0462963" y="0.477941" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="PODERPocaoEgito" sid="677994993327106">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="442662719516963" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\jogo-tcc\venenos [Recuperado].png">
+                                <collision-poly>
+                                    <point x="0.36" y="0.311828" />
+                                    <point x="0.476667" y="0" />
+                                    <point x="0.6" y="0.322581" />
+                                    <point x="0.866667" y="0.5" />
+                                    <point x="0.87" y="0.895161" />
+                                    <point x="0.5" y="0.962366" />
+                                    <point x="0.103333" y="0.916667" />
+                                    <point x="0.0866667" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="INVENTCaledárioMaia" sid="989303222273391">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="271721789674230" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.500718" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\calendarioM.png">
+                                <collision-poly>
+                                    <point x="0.157583" y="0.15777" />
+                                    <point x="0.5" y="0.00830368" />
+                                    <point x="0.849526" y="0.150652" />
+                                    <point x="0.998815" y="0.499407" />
+                                    <point x="0.850711" y="0.850534" />
+                                    <point x="0.5" y="0.997627" />
+                                    <point x="0.145735" y="0.854093" />
+                                    <point x="0.0035545" y="0.499407" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="BoxCivilizacao" sid="250091346627291">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="PODEREscaravelho" sid="771515901229901">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="103944200594834" speed="5">
+                            <frame duration="1" hotspotX="0.500707" hotspotY="0.500506" original-source="C:\Users\Usuário\Downloads\jogo-tcc\egito\escaravelho.png">
+                                <collision-poly>
+                                    <point x="0.144272" y="0.0182002" />
+                                    <point x="0.499293" y="0.239636" />
+                                    <point x="0.816124" y="0.0141557" />
+                                    <point x="0.985856" y="0.366026" />
+                                    <point x="0.688826" y="0.991911" />
+                                    <point x="0.465347" y="0.866532" />
+                                    <point x="0.241867" y="0.972699" />
+                                    <point x="0.0127298" y="0.349848" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="PODERArma" sid="979920405601062">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="436194375377492" speed="5">
+                            <frame duration="1" hotspotX="0.500924" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\jogo-tcc\macuahuitl.png">
+                                <collision-poly>
+                                    <point x="0.0314233" y="0.141667" />
+                                    <point x="0.499076" y="0.166667" />
+                                    <point x="0.977819" y="0.1" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.979667" y="0.908333" />
+                                    <point x="0.499076" y="0.633333" />
+                                    <point x="0.134935" y="0.391667" />
+                                    <point x="0.232902" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="PODEREscriturasMaia" sid="239640922813055">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="944234070376512" speed="5">
+                            <frame duration="1" hotspotX="0.510204" hotspotY="0.490566" original-source="C:\Users\Usuário\Downloads\jogo-tcc\lança.png">
+                                <collision-poly>
+                                    <point x="0.326531" y="0.0301887" />
+                                    <point x="0.489796" y="0.00188679" />
+                                    <point x="0.653061" y="0.0320755" />
+                                    <point x="0.55102" y="0.5" />
+                                    <point x="0.734694" y="0.975472" />
+                                    <point x="0.489796" y="0.992453" />
+                                    <point x="0.183673" y="0.983019" />
+                                    <point x="0.408163" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="HP" sid="275848165913039">
+                    <plugin id="TiledBg" />
+                    <texture />
+                </object-type>
+                <object-type name="HPmax" sid="954675261068263">
+                    <plugin id="TiledBg" />
+                    <texture />
+                </object-type>
+                <object-type name="TxT_BarraHP" sid="730621171949221">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="TxT_HPAtual" sid="444023452517256">
+                    <plugin id="Text" />
+                </object-type>
+            </object-folder>
+            <object-folder name="Pause">
+                <object-type name="BoxPause" sid="325620769260234">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="991708210418515" speed="5">
+                            <frame duration="1" hotspotX="0.497674" hotspotY="0.498607" original-source="C:\Users\Usuário\Downloads\ngc pra guardar os quadrados do inventario.png">
+                                <collision-poly>
+                                    <point x="0.939535" y="0.0362117" />
+                                    <point x="0.990698" y="0.498607" />
+                                    <point x="0.87907" y="0.927577" />
+                                    <point x="0.502326" y="0.930362" />
+                                    <point x="0.0511628" y="0.969359" />
+                                    <point x="0.0325581" y="0.498607" />
+                                    <point x="0.0511628" y="0.0306407" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="ButtonPause1" sid="850546004940390">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="552279022913712" speed="5">
+                            <frame duration="1" hotspotX="0.501724" hotspotY="0.428571" original-source="C:\Users\Usuário\Downloads\botão-jogar.png">
+                                <collision-poly>
+                                    <point x="0.0482759" y="0.119816" />
+                                    <point x="0.5" y="0.0184332" />
+                                    <point x="0.951724" y="0.124424" />
+                                    <point x="0.987931" y="0.423963" />
+                                    <point x="0.974138" y="0.788018" />
+                                    <point x="0.5" y="0.990783" />
+                                    <point x="0.0275862" y="0.788018" />
+                                    <point x="0.0189655" y="0.423963" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Pause" sid="897327848051040">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="ButtonPause2" sid="520789507473102">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="466656733809436" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="ButtonPause3" sid="573827124875200">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="572717321838639" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\botão-sair.png">
+                                <collision-poly>
+                                    <point x="0.0375" y="0.0990566" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.9625" y="0.0990566" />
+                                    <point x="0.998214" y="0.5" />
+                                    <point x="0.9625" y="0.900943" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0.0357143" y="0.90566" />
+                                    <point x="0.00178571" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Caral">
+                <object-folder name="Texturas">
+                    <object-type name="BGCeuCaral" sid="861846733644089">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\Caral - Background\fundo.png" />
+                    </object-type>
+                    <object-type name="BGMontanhas" sid="326157653836294">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Usuário\Downloads\montanhis.png" />
+                    </object-type>
+                    <object-type name="BGNuvensCaral" sid="317479374282565">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\Caral - Background\nuvens.png" />
+                    </object-type>
+                    <object-type name="BGRostinhos" sid="157739791910432">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Usuário\Downloads\jogo-tcc\parede com faces (2).png" />
+                    </object-type>
+                    <object-type name="SolCaral" sid="266775824821458">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="363373407088404" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.502439" original-source="C:\Users\Usuário\Downloads\jogo-tcc\sol.png">
+                                    <collision-poly>
+                                        <point x="0.1875" y="0.204878" />
+                                        <point x="0.5" y="0.0829268" />
+                                        <point x="0.808036" y="0.209756" />
+                                        <point x="0.941964" y="0.497561" />
+                                        <point x="0.830357" y="0.814634" />
+                                        <point x="0.5" y="0.960976" />
+                                        <point x="0.169643" y="0.814634" />
+                                        <point x="0.0580357" y="0.497561" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Nevoa" sid="921450108229382">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="240679725132883" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.501767" original-source="C:\Users\Usuário\Downloads\nevoa.png">
+                                    <collision-poly>
+                                        <point x="0.253731" y="0.480565" />
+                                        <point x="0.458956" y="0.240283" />
+                                        <point x="0.746269" y="0.480565" />
+                                        <point x="0.955224" y="0.805653" />
+                                        <point x="0.201493" y="0.883393" />
+                                        <point x="0.0615672" y="0.696114" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="MarCaral" sid="552858664590213">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="188222203851831">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="439342941024046" speed="5">
+                                <frame duration="1" hotspotX="0.462264" hotspotY="0.365854" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-folder name="Sprites">
+                    <object-type name="Cacto" sid="142326164815149">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="999606082455313">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="603749185122019" speed="5">
+                                <frame duration="1" hotspotX="0.501683" hotspotY="0.50137" original-source="C:\Users\Usuário\Downloads\cacto.png">
+                                    <collision-poly>
+                                        <point x="0.259259" y="0.210959" />
+                                        <point x="0.498316" y="0" />
+                                        <point x="1" y="0.19726" />
+                                        <point x="0.973064" y="0.553425" />
+                                        <point x="0.626263" y="0.821918" />
+                                        <point x="0.498316" y="1" />
+                                        <point x="0.114478" y="0.780822" />
+                                        <point x="0.013468" y="0.49863" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Pedra" sid="577848873673337">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="110899573131239">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="523474440918802" speed="5">
+                                <frame duration="1" hotspotX="10.2586" hotspotY="0.866667" original-source="C:\Users\Usuário\Downloads\pedras.png">
+                                    <collision-poly>
+                                        <point x="0.0754309" y="0.425" />
+                                        <point x="0.224138" y="0.0708334" />
+                                        <point x="0.907328" y="0.1875" />
+                                        <point x="0.980604" y="0.6375" />
+                                        <point x="0.846983" y="0.820834" />
+                                        <point x="0.0495688" y="0.933333" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="PedraTrans" sid="959409779796743">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="668836675006557">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="647100492022120" speed="5">
+                                <frame duration="1" hotspotX="0.482759" hotspotY="0.466667" original-source="C:\Users\Usuário\Downloads\pedras.png">
+                                    <collision-poly>
+                                        <point x="0.0754309" y="0.425" />
+                                        <point x="0.224138" y="0.0708334" />
+                                        <point x="0.907328" y="0.1875" />
+                                        <point x="0.980604" y="0.6375" />
+                                        <point x="0.846983" y="0.820834" />
+                                        <point x="0.0495688" y="0.933333" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="EspinhoCaral" sid="379843600176587">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="145588780440558" speed="5">
+                                <frame duration="1" hotspotX="0.552" hotspotY="0.6375" original-source="C:\Users\Usuário\Downloads\Sem título.png">
+                                    <collision-poly>
+                                        <point x="0.096" y="0.0625" />
+                                        <point x="1" y="0" />
+                                        <point x="1" y="1" />
+                                        <point x="0.02" y="0.575" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-folder name="Colecionáveis">
+                    <object-type name="Quipo" sid="342128613970992">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="424673321787360" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\quipo.png">
+                                    <collision-poly>
+                                        <point x="0.0540541" y="0.0722892" />
+                                        <point x="0.5" y="0.060241" />
+                                        <point x="0.927928" y="0.0963855" />
+                                        <point x="0.936937" y="0.5" />
+                                        <point x="0.743243" y="0.656627" />
+                                        <point x="0.707207" y="0.945784" />
+                                        <point x="0.171171" y="0.897591" />
+                                        <point x="0.175676" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="ScoreEstatua1" sid="901437978297549">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="664255420518859" speed="5">
+                                <frame duration="1" hotspotX="0.492063" hotspotY="0.45297" original-source="C:\Users\Usuário\Downloads\jogo-tcc\estatuas2 (1).png">
+                                    <collision-poly>
+                                        <point x="0.0740741" y="0.227723" />
+                                        <point x="0.513228" y="0.00990099" />
+                                        <point x="0.94709" y="0.230198" />
+                                        <point x="0.878307" y="0.65099" />
+                                        <point x="0.761905" y="0.987624" />
+                                        <point x="0.269841" y="0.985148" />
+                                        <point x="0.0846561" y="0.65099" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="ScoreEstatua2" sid="868058423177881">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="515495505272067" speed="5">
+                                <frame duration="1" hotspotX="0.531579" hotspotY="0.429688" original-source="C:\Users\Usuário\Downloads\estatua1.png">
+                                    <collision-poly>
+                                        <point x="0.136842" y="0.216797" />
+                                        <point x="0.268421" y="0.0136719" />
+                                        <point x="0.826316" y="0.0234375" />
+                                        <point x="0.957895" y="0.40625" />
+                                        <point x="0.863158" y="0.984375" />
+                                        <point x="0.352632" y="0.982422" />
+                                        <point x="0.0105263" y="0.371094" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="ColarCaral" sid="832213576650715">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="533465516936765" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.502793" original-source="C:\Users\Usuário\Downloads\colar.png">
+                                    <collision-poly>
+                                        <point x="0.062963" y="0" />
+                                        <point x="0.5" y="0.664804" />
+                                        <point x="0.974074" y="0.0391061" />
+                                        <point x="0.977778" y="0.363128" />
+                                        <point x="0.796296" y="0.877094" />
+                                        <point x="0.518519" y="1" />
+                                        <point x="0.144445" y="0.648045" />
+                                        <point x="0.00370371" y="0.217877" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="PrimeiroColarCaral" sid="746419012082770">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="282548398366683" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.502793" original-source="C:\Users\Usuário\Downloads\colar.png">
+                                    <collision-poly>
+                                        <point x="0.037037" y="0.0558659" />
+                                        <point x="0.5" y="0.664804" />
+                                        <point x="0.974074" y="0.0391061" />
+                                        <point x="0.937037" y="0.497207" />
+                                        <point x="0.840741" y="0.759777" />
+                                        <point x="0.5" y="0.972067" />
+                                        <point x="0.225926" y="0.659218" />
+                                        <point x="0.0555556" y="0.497207" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-folder name="Plataformas">
+                    <object-type name="Plataformas" sid="313589131931972">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="786419888832319">
+                                <behavior id="solid" />
+                            </behavior-type>
+                            <behavior-type name="Sine" sid="526361782458350">
+                                <behavior id="Sin" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341165691968334" speed="5">
+                                <frame duration="1" hotspotX="0.521327" hotspotY="0.473684" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="PiramideCaral" sid="958963665971585">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="131595785101811">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="913927767088239" speed="5">
+                                <frame duration="1" hotspotX="0.498789" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\pirâmides c.png">
+                                    <collision-poly>
+                                        <point x="0.0956417" y="0.592262" />
+                                        <point x="0.096247" y="0.28125" />
+                                        <point x="0.208535" y="0.281994" />
+                                        <point x="0.208384" y="0" />
+                                        <point x="0.774818" y="0.00297619" />
+                                        <point x="0.773608" y="0.276786" />
+                                        <point x="0.901937" y="0.279762" />
+                                        <point x="0.902542" y="0.598214" />
+                                        <point x="0.997276" y="0.596726" />
+                                        <point x="0.997579" y="0.994048" />
+                                        <point x="0.00242131" y="0.994048" />
+                                        <point x="0.00363196" y="0.595238" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="SoloCaral" sid="115832049726776">
+                        <plugin id="TiledBg" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="388869440566313">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\Caral - Background\terra-caral.png" />
+                    </object-type>
+                </object-folder>
+            </object-folder>
+            <object-folder name="Maias">
+                <object-folder name="Colecionáveis">
+                    <object-type name="CaledárioMaia" sid="737876482279529">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="498113077832192" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.523395" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\calendarioM.png">
+                                    <collision-poly>
+                                        <point x="0.157779" y="0.165121" />
+                                        <point x="0.5" y="0.00897472" />
+                                        <point x="0.849326" y="0.157685" />
+                                        <point x="0.99853" y="0.522026" />
+                                        <point x="0.85051" y="0.888845" />
+                                        <point x="0.5" y="1" />
+                                        <point x="0.145938" y="0.892563" />
+                                        <point x="0.00383835" y="0.522026" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="EstatuasMaia" sid="175413180541043">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="145078278368946" speed="5">
+                                <frame duration="1" hotspotX="0.532967" hotspotY="0.446978" original-source="C:\Users\Usuário\Downloads\escultura.png">
+                                    <collision-poly>
+                                        <point x="0.0732601" y="0.04561" />
+                                        <point x="0.5" y="0.0022805" />
+                                        <point x="0.921245" y="0.0490308" />
+                                        <point x="0.811355" y="0.882554" />
+                                        <point x="0.5" y="0.99886" />
+                                        <point x="0.188645" y="0.882554" />
+                                        <point x="0.122711" y="0.49943" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="EscriturasMaia" sid="630546910023204">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="372687884464062" speed="5">
+                                <frame duration="1" hotspotX="0.510204" hotspotY="0.490566" original-source="C:\Users\Usuário\Downloads\jogo-tcc\lança.png">
+                                    <collision-poly>
+                                        <point x="0.326531" y="0.0301887" />
+                                        <point x="0.489796" y="0.00188679" />
+                                        <point x="0.653061" y="0.0320755" />
+                                        <point x="0.55102" y="0.5" />
+                                        <point x="0.734694" y="0.975472" />
+                                        <point x="0.489796" y="0.992453" />
+                                        <point x="0.183673" y="0.983019" />
+                                        <point x="0.408163" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="FarinhaMilho" sid="494055916796642">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="774421346909539" speed="5">
+                                <frame duration="1" hotspotX="0.665644" hotspotY="0.841808" original-source="C:\Users\Usuário\Downloads\jogo-tcc\farinha.png">
+                                    <collision-poly>
+                                        <point x="0.194785" y="0.179379" />
+                                        <point x="0.5" y="0.00706215" />
+                                        <point x="0.871166" y="0.118644" />
+                                        <point x="0.929448" y="0.5" />
+                                        <point x="0.935583" y="0.940678" />
+                                        <point x="0.5" y="0.925141" />
+                                        <point x="0.0444785" y="0.95904" />
+                                        <point x="0.25" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="VasosMaia" sid="108450874137062">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="254703607944518" speed="5">
+                                <frame duration="1" hotspotX="0.513308" hotspotY="0.483553" original-source="C:\Users\Usuário\Downloads\jogo-tcc\vaso maia.png">
+                                    <collision-poly>
+                                        <point x="0.148289" y="0.0953947" />
+                                        <point x="0.498099" y="0.00986842" />
+                                        <point x="0.863118" y="0.0855263" />
+                                        <point x="0.984791" y="0.483553" />
+                                        <point x="0.851711" y="0.871711" />
+                                        <point x="0.498099" y="0.993421" />
+                                        <point x="0.148289" y="0.871711" />
+                                        <point x="0.0114068" y="0.483553" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="PrimeiraFarinhaMilho" sid="833480265068623">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="973369611114468" speed="5">
+                                <frame duration="1" hotspotX="0.665644" hotspotY="0.841808" original-source="C:\Users\Usuário\Downloads\jogo-tcc\farinha.png">
+                                    <collision-poly>
+                                        <point x="0.194785" y="0.179379" />
+                                        <point x="0.5" y="0.00706215" />
+                                        <point x="0.871166" y="0.118644" />
+                                        <point x="0.929448" y="0.5" />
+                                        <point x="0.935583" y="0.940678" />
+                                        <point x="0.5" y="0.925141" />
+                                        <point x="0.0444785" y="0.95904" />
+                                        <point x="0.25" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="PoderMaia" sid="641002676059934">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="498939063248757" speed="5">
+                                <frame duration="1" hotspotX="0.510204" hotspotY="0.490566" original-source="C:\Users\Usuário\Downloads\jogo-tcc\lança.png">
+                                    <collision-poly>
+                                        <point x="0.326531" y="0.0301887" />
+                                        <point x="0.489796" y="0.00188679" />
+                                        <point x="0.653061" y="0.0320755" />
+                                        <point x="0.55102" y="0.5" />
+                                        <point x="0.734694" y="0.975472" />
+                                        <point x="0.489796" y="0.992453" />
+                                        <point x="0.183673" y="0.983019" />
+                                        <point x="0.408163" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-folder name="Plataformas">
+                    <object-type name="ChãoMaia" sid="777747729359539">
+                        <plugin id="TiledBg" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="567208819829744">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="C:\Users\Usuário\Downloads\bloco maia.png" />
+                    </object-type>
+                    <object-type name="PlataformaMaia" sid="838101080388022">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="391199846268900">
+                                <behavior id="solid" />
+                            </behavior-type>
+                            <behavior-type name="Sine" sid="118333634545853">
+                                <behavior id="Sin" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="839627080577557" speed="5">
+                                <frame duration="1" hotspotX="0.553459" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="PirâmideMaia" sid="767788244266423">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="217316149865861">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="755779955274284" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.500383" original-source="C:\Users\Usuário\Downloads\jogo-tcc\Piramide.png">
+                                    <collision-poly>
+                                        <point x="0.5559" y="0.178544" />
+                                        <point x="0.602873" y="0.178161" />
+                                        <point x="0.603067" y="0.272222" />
+                                        <point x="0.656735" y="0.271743" />
+                                        <point x="0.656396" y="0.363458" />
+                                        <point x="0.738524" y="0.363338" />
+                                        <point x="0.738439" y="0.46596" />
+                                        <point x="0.815994" y="0.4659" />
+                                        <point x="0.815605" y="0.57931" />
+                                        <point x="0.872671" y="0.57931" />
+                                        <point x="0.873253" y="0.698851" />
+                                        <point x="0.928668" y="0.699617" />
+                                        <point x="0.929202" y="0.84023" />
+                                        <point x="1" y="0.840039" />
+                                        <point x="0.999612" y="0.999234" />
+                                        <point x="0.000388199" y="0.999234" />
+                                        <point x="0" y="0.844445" />
+                                        <point x="0.0696816" y="0.843295" />
+                                        <point x="0.0695845" y="0.70479" />
+                                        <point x="0.125437" y="0.706035" />
+                                        <point x="0.125412" y="0.578688" />
+                                        <point x="0.185183" y="0.578616" />
+                                        <point x="0.185171" y="0.468199" />
+                                        <point x="0.245147" y="0.468582" />
+                                        <point x="0.244856" y="0.366092" />
+                                        <point x="0.315363" y="0.365421" />
+                                        <point x="0.315678" y="0.273132" />
+                                        <point x="0.358538" y="0.272965" />
+                                        <point x="0.358228" y="0.179394" />
+                                        <point x="0.410092" y="0.180119" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="BlocosMaia1" sid="152619778554638">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="319234392485377">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="774916209272446" speed="5">
+                                <frame duration="1" hotspotX="0.472222" hotspotY="0.294444" original-source="C:\Users\Usuário\Downloads\bloco maia.png" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="BlocosMaia2" sid="391639993870673">
+                        <plugin id="TiledBg" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="330024235752198">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="C:\Users\Usuário\Downloads\bloco maia.png" />
+                    </object-type>
+                </object-folder>
+                <object-folder name="Sprites">
+                    <object-type name="DeusMorteMaia" sid="885111235056519">
+                        <plugin id="Sprite" />
+                        <instance-variables>
+                            <instance-variable name="direcaoDeusMorte" sid="390152922632550" type="number" />
+                        </instance-variables>
+                        <behaviors>
+                            <behavior-type name="Platform" sid="196674514301925">
+                                <behavior id="Platform" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="867218784845775" speed="5">
+                                <frame duration="1" hotspotX="0.463855" hotspotY="0.431942" />
+                                <frame duration="1" hotspotX="0.396226" hotspotY="0.494545" />
+                                <frame duration="1" hotspotX="0.513514" hotspotY="0.47491" />
+                                <frame duration="1" hotspotX="0.513514" hotspotY="0.468582" />
+                                <frame duration="1" hotspotX="0.540541" hotspotY="0.468582" />
+                                <frame duration="1" hotspotX="0.548148" hotspotY="0.468354" />
+                                <frame duration="1" hotspotX="0.4375" hotspotY="0.491833" />
+                                <frame duration="1" hotspotX="0.594771" hotspotY="0.490054" />
+                                <frame duration="1" hotspotX="0.306977" hotspotY="0.481949" />
+                                <frame duration="1" hotspotX="0.65896" hotspotY="0.488246" />
+                                <frame duration="1" hotspotX="0.461905" hotspotY="0.497288" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="FantasmaMaia" sid="531776459126719">
+                        <plugin id="Sprite" />
+                        <instance-variables>
+                            <instance-variable name="direcaoFantasma" sid="797267046493606" type="number" />
+                        </instance-variables>
+                        <behaviors>
+                            <behavior-type name="Platform" sid="205065043818144">
+                                <behavior id="Platform" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="237329024529404" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Usuário\Downloads\jogo-tcc\fanstasma maia.png">
+                                    <collision-poly>
+                                        <point x="0.446203" y="0.324324" />
+                                        <point x="0.873417" y="0.0378378" />
+                                        <point x="0.996836" y="0.281081" />
+                                        <point x="0.846519" y="0.54054" />
+                                        <point x="0.908228" y="0.89054" />
+                                        <point x="0.5" y="0.991892" />
+                                        <point x="0.174051" y="0.851351" />
+                                        <point x="0.0189873" y="0.801351" />
+                                        <point x="0.300633" y="0.586486" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-folder name="Texturas">
+                    <object-type name="Mata" sid="694196634321616">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Usuário\Downloads\background.png" />
+                    </object-type>
+                    <object-type name="EspinhoMaia" sid="105406251472907">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="501741995542023" speed="5">
+                                <frame duration="1" hotspotX="0.528571" hotspotY="0.622222" original-source="C:\Users\Usuário\Downloads\espinho.png" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="ColinasMaias" sid="804078645371212">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Usuário\Downloads\parte verde de trás.png" />
+                    </object-type>
+                    <object-type name="ParedeMaia" sid="495245951735528">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Usuário\Downloads\terra.png" />
+                    </object-type>
+                    <object-type name="Arvores" sid="494248472850072">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Usuário\Downloads\árvores secas.png" />
+                    </object-type>
+                    <object-type name="Galhos" sid="479051475794061">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Usuário\Downloads\galho.png" />
+                    </object-type>
+                </object-folder>
+                <object-type name="FalaExtraMaias" sid="700883939259353">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="663921640188571" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Astecas">
+                <object-folder name="Colecionáveis">
+                    <object-type name="Arma" sid="127584458413126">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="472164170536940" speed="5">
+                                <frame duration="1" hotspotX="0.500924" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\jogo-tcc\macuahuitl.png">
+                                    <collision-poly>
+                                        <point x="0.0314233" y="0.141667" />
+                                        <point x="0.499076" y="0.166667" />
+                                        <point x="0.977819" y="0.1" />
+                                        <point x="1" y="0.5" />
+                                        <point x="0.979667" y="0.908333" />
+                                        <point x="0.499076" y="0.633333" />
+                                        <point x="0.134935" y="0.391667" />
+                                        <point x="0.232902" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="ColarAsteca" sid="273632286648438">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="132849112654007" speed="5">
+                                <frame duration="1" hotspotX="0.501377" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\jogo-tcc\cocar asteca.png">
+                                    <collision-poly>
+                                        <point x="0.214876" y="0.272727" />
+                                        <point x="0.498623" y="0.104895" />
+                                        <point x="0.702479" y="0.377622" />
+                                        <point x="0.903581" y="0.5" />
+                                        <point x="0.900826" y="0.874126" />
+                                        <point x="0.498623" y="0.951049" />
+                                        <point x="0.0247934" y="0.968531" />
+                                        <point x="0.0936639" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Cobra" sid="207158765744067">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="884862002752243" speed="5">
+                                <frame duration="1" hotspotX="0.50081" hotspotY="0.501845" original-source="C:\Users\Usuário\Downloads\jogo-tcc\escultura cobra.png">
+                                    <collision-poly>
+                                        <point x="0.0210697" y="0.0479705" />
+                                        <point x="0.49919" y="0.837638" />
+                                        <point x="0.975689" y="0.0553505" />
+                                        <point x="0.831442" y="0.501845" />
+                                        <point x="0.858995" y="0.682657" />
+                                        <point x="0.49919" y="0.99631" />
+                                        <point x="0.119935" y="0.730627" />
+                                        <point x="0.145867" y="0.501845" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="EstatuaAsteca" sid="981690831777550">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="308565374587622" speed="5">
+                                <frame duration="1" hotspotX="0.501873" hotspotY="0.500994" original-source="C:\Users\Usuário\Downloads\jogo-tcc\escultura homen.png">
+                                    <collision-poly>
+                                        <point x="0.2397" y="0.127237" />
+                                        <point x="0.498127" y="0.00198807" />
+                                        <point x="0.775281" y="0.119284" />
+                                        <point x="0.996255" y="0.499006" />
+                                        <point x="0.808989" y="0.898608" />
+                                        <point x="0.498127" y="0.817097" />
+                                        <point x="0.254682" y="0.864811" />
+                                        <point x="0.0262172" y="0.499006" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="CalendarioAsteca" sid="818969098060341">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="985786368189516" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\jogo-tcc\pedra do sol.png">
+                                    <collision-poly>
+                                        <point x="0.146814" y="0.146814" />
+                                        <point x="0.5" y="0.00138504" />
+                                        <point x="0.853186" y="0.146814" />
+                                        <point x="0.998615" y="0.5" />
+                                        <point x="0.853186" y="0.853186" />
+                                        <point x="0.5" y="0.998615" />
+                                        <point x="0.146814" y="0.853186" />
+                                        <point x="0.00138504" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="MilhoVida" sid="216087996719809">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="472857959506218" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.501845" original-source="C:\Users\Usuário\Downloads\jogo-tcc\milho.png">
+                                    <collision-poly>
+                                        <point x="0.221311" y="0.099631" />
+                                        <point x="0.5" y="0.00738007" />
+                                        <point x="0.688525" y="0.140221" />
+                                        <point x="0.983607" y="0.498155" />
+                                        <point x="0.811475" y="0.915129" />
+                                        <point x="0.5" y="0.948339" />
+                                        <point x="0.368852" y="0.833948" />
+                                        <point x="0.057377" y="0.498155" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="PoderAsteca" sid="313897415557969">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="271564796064705" speed="5">
+                                <frame duration="1" hotspotX="0.500924" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\jogo-tcc\macuahuitl.png">
+                                    <collision-poly>
+                                        <point x="0.0314233" y="0.141667" />
+                                        <point x="0.499076" y="0.166667" />
+                                        <point x="0.977819" y="0.1" />
+                                        <point x="1" y="0.5" />
+                                        <point x="0.979667" y="0.908333" />
+                                        <point x="0.499076" y="0.633333" />
+                                        <point x="0.134935" y="0.391667" />
+                                        <point x="0.232902" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-folder name="Plataformas">
+                    <object-type name="PlataformaAsteca" sid="573927259107949">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Jumpthru" sid="993313581063288">
+                                <behavior id="jumpthru" />
+                            </behavior-type>
+                            <behavior-type name="Solid" sid="849611403181499">
+                                <behavior id="solid" />
+                            </behavior-type>
+                            <behavior-type name="Sine" sid="757044864289767">
+                                <behavior id="Sin" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="554760361256729" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="ChaoAsteca" sid="937262794542162">
+                        <plugin id="TiledBg" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="205288310620081">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="C:\Users\Usuário\Downloads\bloquinho.png" />
+                    </object-type>
+                    <object-type name="Chinampas" sid="502838723346409">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="236582318683465">
+                                <behavior id="solid" />
+                            </behavior-type>
+                            <behavior-type name="Sine" sid="225313716784113">
+                                <behavior id="Sin" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="529638862146676" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.500582" original-source="C:\Users\Usuário\Downloads\chinampas.png">
+                                    <collision-poly>
+                                        <point x="0" y="0.554132" />
+                                        <point x="1" y="0.554133" />
+                                        <point x="1" y="1" />
+                                        <point x="0" y="1" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="PiramideSol" sid="556349457577497">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="167522908420289" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.50237" original-source="C:\Users\Usuário\Downloads\pirâmide-asteca.png">
+                                    <collision-poly>
+                                        <point x="0.288945" y="0.445497" />
+                                        <point x="0.5" y="0.00473934" />
+                                        <point x="0.619347" y="0.2891" />
+                                        <point x="0.7701" y="0.49763" />
+                                        <point x="0.997487" y="0.990521" />
+                                        <point x="0.00251256" y="0.990521" />
+                                        <point x="0.0979899" y="0.682464" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="PlatPiramideAsteca" sid="552182811456067">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="740535322318497">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="326345136001159" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-folder name="Sprites">
+                    <object-type name="Espanhol" sid="192919633871007">
+                        <plugin id="Sprite" />
+                        <instance-variables>
+                            <instance-variable name="direcaoEspanhol" sid="990329964981502" type="number" />
+                        </instance-variables>
+                        <behaviors>
+                            <behavior-type name="Platform" sid="949678877858799">
+                                <behavior id="Platform" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="345142137713150" speed="5">
+                                <frame duration="1" hotspotX="0.501538" hotspotY="1" original-source="C:\Users\Usuário\Downloads\jogo-tcc\espanhol.png">
+                                    <collision-poly>
+                                        <point x="0.193846" y="0.0607522" />
+                                        <point x="0.498462" y="0.00385728" />
+                                        <point x="0.624615" y="0.117647" />
+                                        <point x="0.587692" y="0.499518" />
+                                        <point x="0.6" y="0.874638" />
+                                        <point x="0.498462" y="0.994214" />
+                                        <point x="0.0984615" y="0.969142" />
+                                        <point x="0.04" y="0.499518" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-folder name="Texturas">
+                    <object-type name="CeuAsteca" sid="258222509310410">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Usuário\Downloads\céu.png" />
+                    </object-type>
+                    <object-type name="SolAsteca" sid="623741532165292">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="850501657104921" speed="5">
+                                <frame duration="1" hotspotX="0.501484" hotspotY="0.501484" original-source="C:\Users\Usuário\Downloads\sol.png">
+                                    <collision-poly>
+                                        <point x="0.148368" y="0.148368" />
+                                        <point x="0.498516" y="0" />
+                                        <point x="0.851632" y="0.148368" />
+                                        <point x="0.997033" y="0.498516" />
+                                        <point x="0.851632" y="0.851632" />
+                                        <point x="0.498516" y="1" />
+                                        <point x="0.148368" y="0.851632" />
+                                        <point x="0" y="0.498516" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="PiramideAsteca1" sid="847099928443555">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="443696015334863" speed="5">
+                                <frame duration="1" hotspotX="0.501548" hotspotY="0.501608" original-source="C:\Users\Usuário\Downloads\piramides fundo.png">
+                                    <collision-poly>
+                                        <point x="0.739938" y="0.498392" />
+                                        <point x="0.910217" y="0.906752" />
+                                        <point x="0.501548" y="0.993569" />
+                                        <point x="0.108359" y="0.88746" />
+                                        <point x="0.0495356" y="0.498392" />
+                                        <point x="0.19195" y="0.199357" />
+                                        <point x="0.501548" y="0.26045" />
+                                        <point x="0.650155" y="0.363344" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="PiramideAsteca2" sid="248905432559207">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="437963907507843" speed="5">
+                                <frame duration="1" hotspotX="0.501548" hotspotY="0.501608" original-source="C:\Users\Usuário\Downloads\piramides fundo.png">
+                                    <collision-poly>
+                                        <point x="0.349845" y="0.363344" />
+                                        <point x="0.498452" y="0.26045" />
+                                        <point x="0.80805" y="0.199357" />
+                                        <point x="0.950464" y="0.498392" />
+                                        <point x="0.891641" y="0.88746" />
+                                        <point x="0.498452" y="0.993569" />
+                                        <point x="0.0897833" y="0.906752" />
+                                        <point x="0.260062" y="0.498392" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="MarAsteca" sid="782494628206672">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Usuário\Downloads\mar.png" />
+                    </object-type>
+                    <object-type name="PiramdeAsteca3" sid="518898310367907">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="185936660415773" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\jogo-tcc\pirâmide maia.png">
+                                    <collision-poly>
+                                        <point x="0.162708" y="0.531414" />
+                                        <point x="0.210214" y="0.400524" />
+                                        <point x="0.249406" y="0.387434" />
+                                        <point x="0.309382" y="0.22644" />
+                                        <point x="0.474763" y="0.248037" />
+                                        <point x="0.650089" y="0.151505" />
+                                        <point x="0.692622" y="0.294339" />
+                                        <point x="0.71734" y="0.28534" />
+                                        <point x="0.787411" y="0.455497" />
+                                        <point x="0.837293" y="0.443717" />
+                                        <point x="1" y="0.657722" />
+                                        <point x="0.880048" y="0.735602" />
+                                        <point x="0.477435" y="1" />
+                                        <point x="0.00118765" y="0.793194" />
+                                        <point x="0.137767" y="0.536649" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="HomemBarco" sid="673871722908303">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="489328559562059" speed="5">
+                                <frame duration="1" hotspotX="0.48995" hotspotY="0.577358" original-source="C:\Users\Usuário\Downloads\homemzinho no barco com sombra.png">
+                                    <collision-poly>
+                                        <point x="0.276382" y="0.675472" />
+                                        <point x="0.48995" y="0.158491" />
+                                        <point x="0.703518" y="0.675472" />
+                                        <point x="0.494975" y="0.577358" />
+                                        <point x="0.89196" y="0.762264" />
+                                        <point x="0.48995" y="0.996226" />
+                                        <point x="0.0703518" y="0.788679" />
+                                        <point x="0.432161" y="0.577358" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="ParedeAsteca" sid="993402253148754">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Usuário\Downloads\parede antes das pirâmides do fundo.png" />
+                    </object-type>
+                    <object-type name="Montanhas_ast" sid="239828635435189">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Usuário\Downloads\terra 2.png" />
+                    </object-type>
+                </object-folder>
+            </object-folder>
+            <object-folder name="Neutro">
+                <object-type name="ButtonBack" sid="593213183193355">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="443258509836629" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\botoes\volta.png">
+                                <collision-poly>
+                                    <point x="0.994133" y="0.490157" />
+                                    <point x="0.849367" y="0.846457" />
+                                    <point x="0.5" y="0.994095" />
+                                    <point x="0.150633" y="0.846457" />
+                                    <point x="0.00586671" y="0.490157" />
+                                    <point x="0.150633" y="0.133858" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.849367" y="0.133858" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="ButtonBack2" sid="781731791516179">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="583912203636684" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\botoes\volta.png">
+                                <collision-poly>
+                                    <point x="0.994133" y="0.490157" />
+                                    <point x="0.849367" y="0.846457" />
+                                    <point x="0.5" y="0.994095" />
+                                    <point x="0.150633" y="0.846457" />
+                                    <point x="0.00586671" y="0.490157" />
+                                    <point x="0.150633" y="0.133858" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.849367" y="0.133858" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Creditos">
+                <object-type name="Fund_Cred" sid="318975897293605">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Usuário\Downloads\white-paper-texture-with-flecks (1).jpg" />
+                </object-type>
+                <object-type name="LogoMarca" sid="764564932515795">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="675927955613047" speed="5">
+                            <frame duration="1" hotspotX="0.500485" hotspotY="0.500485" original-source="C:\Users\Usuário\Downloads\logomarca.png">
+                                <collision-poly>
+                                    <point x="0.14743" y="0.14743" />
+                                    <point x="0.499515" y="0.00193986" />
+                                    <point x="0.85257" y="0.14743" />
+                                    <point x="0.99806" y="0.499515" />
+                                    <point x="0.85257" y="0.85257" />
+                                    <point x="0.499515" y="0.99903" />
+                                    <point x="0.14743" y="0.85257" />
+                                    <point x="0.000969932" y="0.499515" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Text_Cred" sid="927235298141127">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="709756708684083" speed="5">
+                            <frame duration="1" hotspotX="0.616188" hotspotY="0.488806" original-source="C:\Users\Usuário\Downloads\creditos.png">
+                                <collision-poly>
+                                    <point x="0.180641" y="0.529907" />
+                                    <point x="0.616938" y="0" />
+                                    <point x="1" y="0.529907" />
+                                    <point x="1" y="0.559145" />
+                                    <point x="0.616938" y="1" />
+                                    <point x="0" y="0.559145" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Egito">
+                <object-folder name="Colecionáveis">
+                    <object-type name="ColarEgito" sid="896553995598473">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="503967785107269" speed="5">
+                                <frame duration="1" hotspotX="0.47981" hotspotY="0.479651" original-source="C:\Users\Usuário\Downloads\jogo-tcc\venenos [Recuperado].png">
+                                    <collision-poly>
+                                        <point x="0.470309" y="0.00290698" />
+                                        <point x="0.498812" y="0.00290698" />
+                                        <point x="0.527316" y="0.00581395" />
+                                        <point x="0.893112" y="0.322674" />
+                                        <point x="0.91449" y="0.627907" />
+                                        <point x="0.56057" y="0.944767" />
+                                        <point x="0.0997625" y="0.697674" />
+                                        <point x="0.102138" y="0.276163" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="PocaoEgito" sid="880441996452407">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="854945385458502" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\jogo-tcc\venenos [Recuperado].png">
+                                    <collision-poly>
+                                        <point x="0.36" y="0.311828" />
+                                        <point x="0.476667" y="0" />
+                                        <point x="0.6" y="0.322581" />
+                                        <point x="0.866667" y="0.5" />
+                                        <point x="0.87" y="0.895161" />
+                                        <point x="0.5" y="0.962366" />
+                                        <point x="0.103333" y="0.916667" />
+                                        <point x="0.0866667" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Urna" sid="839239710960314">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="795408307016388" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\jogo-tcc\urnas.png">
+                                    <collision-poly>
+                                        <point x="0.21875" y="0.0972222" />
+                                        <point x="0.5" y="0.142361" />
+                                        <point x="0.820313" y="0.0798611" />
+                                        <point x="0.984375" y="0.5" />
+                                        <point x="0.789063" y="0.90625" />
+                                        <point x="0.5" y="0.996528" />
+                                        <point x="0.164063" y="0.927083" />
+                                        <point x="0" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Escaravelho" sid="116946432915070">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="915878345071028" speed="5">
+                                <frame duration="1" hotspotX="0.500707" hotspotY="0.500506" original-source="C:\Users\Usuário\Downloads\jogo-tcc\egito\escaravelho.png">
+                                    <collision-poly>
+                                        <point x="0.144272" y="0.0182002" />
+                                        <point x="0.499293" y="0.239636" />
+                                        <point x="0.816124" y="0.0141557" />
+                                        <point x="0.985856" y="0.366026" />
+                                        <point x="0.688826" y="0.991911" />
+                                        <point x="0.465347" y="0.866532" />
+                                        <point x="0.241867" y="0.972699" />
+                                        <point x="0.0127298" y="0.349848" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Papiro" sid="690806863546278">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="380338258037850" speed="5">
+                                <frame duration="1" hotspotX="0.527778" hotspotY="0.477941" original-source="C:\Users\Usuário\Downloads\jogo-tcc\papiro.png">
+                                    <collision-poly>
+                                        <point x="0.0694444" y="0.0735294" />
+                                        <point x="0.523148" y="0.0477941" />
+                                        <point x="0.787037" y="0.227941" />
+                                        <point x="0.763889" y="0.477941" />
+                                        <point x="0.930556" y="0.841912" />
+                                        <point x="0.523148" y="0.948529" />
+                                        <point x="0.0972222" y="0.860294" />
+                                        <point x="0.0462963" y="0.477941" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="PrimeiroEscaravelho" sid="975809392155406">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="903945300706101" speed="5">
+                                <frame duration="1" hotspotX="0.500707" hotspotY="0.500506" original-source="C:\Users\Usuário\Downloads\jogo-tcc\egito\escaravelho.png">
+                                    <collision-poly>
+                                        <point x="0.144272" y="0.0182002" />
+                                        <point x="0.499293" y="0.239636" />
+                                        <point x="0.816124" y="0.0141557" />
+                                        <point x="0.985856" y="0.366026" />
+                                        <point x="0.688826" y="0.991911" />
+                                        <point x="0.465347" y="0.866532" />
+                                        <point x="0.241867" y="0.972699" />
+                                        <point x="0.0127298" y="0.349848" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="PoderEgito" sid="265673960795112">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="887617799988756" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuário\Downloads\jogo-tcc\venenos [Recuperado].png">
+                                    <collision-poly>
+                                        <point x="0.36" y="0.311828" />
+                                        <point x="0.476667" y="0" />
+                                        <point x="0.6" y="0.322581" />
+                                        <point x="0.866667" y="0.5" />
+                                        <point x="0.87" y="0.895161" />
+                                        <point x="0.5" y="0.962366" />
+                                        <point x="0.103333" y="0.916667" />
+                                        <point x="0.0866667" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-folder name="Sprites">
+                    <object-type name="Mumia" sid="543098116379431">
+                        <plugin id="Sprite" />
+                        <instance-variables>
+                            <instance-variable name="direcaoMumia" sid="219426587318520" type="number" />
+                        </instance-variables>
+                        <behaviors>
+                            <behavior-type name="Platform" sid="670665059016674">
+                                <behavior id="Platform" />
+                            </behavior-type>
+                            <behavior-type name="Solid" sid="699789294471841">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="493691640240770" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Usuário\Downloads\múmia.png">
+                                    <collision-poly>
+                                        <point x="0.25" y="0.0114155" />
+                                        <point x="0.455224" y="0.0114155" />
+                                        <point x="0.417911" y="0.187215" />
+                                        <point x="1" y="0.25" />
+                                        <point x="0.529851" y="0.399543" />
+                                        <point x="0.485075" y="0.592466" />
+                                        <point x="0.671642" y="0.986301" />
+                                        <point x="0.358209" y="0.70548" />
+                                        <point x="0.0746269" y="0.995434" />
+                                        <point x="0.25" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Seth" sid="306520507344414">
+                        <plugin id="Sprite" />
+                        <instance-variables>
+                            <instance-variable name="direcaoSeth" sid="531927949319406" type="number" />
+                        </instance-variables>
+                        <behaviors>
+                            <behavior-type name="Platform" sid="281222976690536">
+                                <behavior id="Platform" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="7" loop="1" name="Andando" pingpong="0" repeatcount="7" repeatto="1" sid="369564927654244" speed="4">
+                                <frame duration="1" hotspotX="0.502146" hotspotY="1">
+                                    <collision-poly>
+                                        <point x="0.0944206" y="0.0413534" />
+                                        <point x="0.497854" y="0.0789474" />
+                                        <point x="0.682403" y="0.139098" />
+                                        <point x="0.639485" y="0.5" />
+                                        <point x="0.772532" y="0.99812" />
+                                        <point x="0.497854" y="0.819549" />
+                                        <point x="0.141631" y="0.93797" />
+                                        <point x="0.180258" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0.502463" hotspotY="1">
+                                    <collision-poly>
+                                        <point x="0.0944206" y="0.0413534" />
+                                        <point x="0.497854" y="0.0789474" />
+                                        <point x="0.682403" y="0.139098" />
+                                        <point x="0.639485" y="0.5" />
+                                        <point x="0.772532" y="0.99812" />
+                                        <point x="0.497854" y="0.819549" />
+                                        <point x="0.141631" y="0.93797" />
+                                        <point x="0.180258" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0.5" hotspotY="1">
+                                    <collision-poly>
+                                        <point x="0.0944206" y="0.0413534" />
+                                        <point x="0.497854" y="0.0789474" />
+                                        <point x="0.682403" y="0.139098" />
+                                        <point x="0.639485" y="0.5" />
+                                        <point x="0.772532" y="0.99812" />
+                                        <point x="0.497854" y="0.819549" />
+                                        <point x="0.141631" y="0.93797" />
+                                        <point x="0.180258" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0.502703" hotspotY="1">
+                                    <collision-poly>
+                                        <point x="0.0944206" y="0.0413534" />
+                                        <point x="0.497854" y="0.0789474" />
+                                        <point x="0.682403" y="0.139098" />
+                                        <point x="0.639485" y="0.5" />
+                                        <point x="0.772532" y="0.99812" />
+                                        <point x="0.497854" y="0.819549" />
+                                        <point x="0.141631" y="0.93797" />
+                                        <point x="0.180258" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0.5" hotspotY="1">
+                                    <collision-poly>
+                                        <point x="0.0944206" y="0.0413534" />
+                                        <point x="0.497854" y="0.0789474" />
+                                        <point x="0.682403" y="0.139098" />
+                                        <point x="0.767392" y="0.5" />
+                                        <point x="0.772532" y="0.99812" />
+                                        <point x="0.497854" y="0.819549" />
+                                        <point x="0.141631" y="0.93797" />
+                                        <point x="0.180258" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0.5" hotspotY="1">
+                                    <collision-poly>
+                                        <point x="0.0944206" y="0.0413534" />
+                                        <point x="0.497854" y="0.0789474" />
+                                        <point x="0.682403" y="0.139098" />
+                                        <point x="0.639485" y="0.5" />
+                                        <point x="0.772532" y="0.99812" />
+                                        <point x="0.497854" y="0.819549" />
+                                        <point x="0.141631" y="0.93797" />
+                                        <point x="0.180258" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0.5" hotspotY="1">
+                                    <collision-poly>
+                                        <point x="0.0944206" y="0.0413534" />
+                                        <point x="0.497854" y="0.0789474" />
+                                        <point x="0.682403" y="0.139098" />
+                                        <point x="0.639485" y="0.5" />
+                                        <point x="0.772532" y="0.99812" />
+                                        <point x="0.497854" y="0.819549" />
+                                        <point x="0.141631" y="0.93797" />
+                                        <point x="0.180258" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Sarcofago" sid="185190335031913">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="978249385513400">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="517113063510227" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.500759" original-source="C:\Users\Usuário\Downloads\jogo-tcc\egito\sarcofago.png">
+                                    <collision-poly>
+                                        <point x="0.0254237" y="0.0455235" />
+                                        <point x="0.5" y="0.00151745" />
+                                        <point x="0.964407" y="0.0637329" />
+                                        <point x="0.94661" y="0.499241" />
+                                        <point x="0.998305" y="0.996965" />
+                                        <point x="0.00169492" y="0.996965" />
+                                        <point x="0.0559322" y="0.499241" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-folder name="Texturas">
+                    <object-type name="BGCeuEgito" sid="604694254659205">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Usuário\Downloads\jogo-tcc\egito\céu egito.png" />
+                    </object-type>
+                    <object-type name="BGPiramidesEgito" sid="587164267337479">
+                        <plugin id="TiledBg" />
+                        <texture />
+                    </object-type>
+                    <object-type name="APiramideEgito" sid="993195840745590">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="262033010385944" speed="5">
+                                <frame duration="1" hotspotX="0.500885" hotspotY="0.953642" original-source="C:\Users\Usuário\Downloads\jogo-tcc\egito\pirâmide.png">
+                                    <collision-poly>
+                                        <point x="0.267257" y="0.333333" />
+                                        <point x="0.442478" y="0.00882998" />
+                                        <point x="0.8" y="0.498896" />
+                                        <point x="0.99823" y="0.772627" />
+                                        <point x="0.366372" y="1" />
+                                        <point x="0.00176993" y="0.821192" />
+                                        <point x="0.176991" y="0.498896" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="BGNuvensEgito" sid="609306556525281">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\Caral - Background\nuvens.png" />
+                    </object-type>
+                    <object-type name="PiramidesEgito" sid="306620467694155">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="900184268972462" speed="5">
+                                <frame duration="1" hotspotX="0.500336" hotspotY="0.500531" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\background egito\primeiro cenário\pirâmides.png">
+                                    <collision-poly>
+                                        <point x="0.203766" y="0.321998" />
+                                        <point x="0.499664" y="0.265675" />
+                                        <point x="0.70612" y="0.4644" />
+                                        <point x="0.728985" y="0.499469" />
+                                        <point x="0.952253" y="0.924548" />
+                                        <point x="0.499664" y="0.990436" />
+                                        <point x="0.0874243" y="0.861849" />
+                                        <point x="0.132482" y="0.499469" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="DunasEgito" sid="218413530773545">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Usuário\Downloads\jogo-tcc\dunas 40009090.png" />
+                    </object-type>
+                    <object-type name="CoqueirosEgito" sid="543750952372924">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700806654984848" speed="5">
+                                <frame duration="1" hotspotX="0.504673" hotspotY="0.502924" original-source="C:\Users\Usuário\Downloads\coqueiro.png">
+                                    <collision-poly>
+                                        <point x="0.142857" y="0.0909091" />
+                                        <point x="0.5" y="0.0681818" />
+                                        <point x="0.785714" y="0.136364" />
+                                        <point x="0.892857" y="0.5" />
+                                        <point x="0.535714" y="0.704545" />
+                                        <point x="0.5" y="0.954545" />
+                                        <point x="0.428571" y="0.727273" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="BGDentroPiramide" sid="364722453902185">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Usuário\Downloads\jogo-tcc\egito\terra-egito.png" />
+                    </object-type>
+                    <object-type name="Bordas" sid="357819510774674">
+                        <plugin id="TiledBg" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="345401444786478">
+                                <behavior id="solid" />
+                            </behavior-type>
+                            <behavior-type name="Sine" sid="823016695363306">
+                                <behavior id="Sin" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture />
+                    </object-type>
+                    <object-type name="Fundo_Esc" sid="877789147053298">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="442040721508830" speed="5">
+                                <frame duration="1" hotspotX="0.442573" hotspotY="0.460154" original-source="C:\Users\Usuário\Downloads\jogo-tcc\egito\parede da escada.png">
+                                    <collision-poly>
+                                        <point x="0.0551302" y="0.0694087" />
+                                        <point x="0.848392" y="0.789203" />
+                                        <point x="0.0551302" y="0.159383" />
+                                        <point x="0.416539" y="0.658098" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Parede_int" sid="596953222969479">
+                        <plugin id="TiledBg" />
+                        <texture original-source="C:\Users\Usuário\Downloads\jogo-tcc\egito\parede com hieroglifos.png" />
+                    </object-type>
+                </object-folder>
+                <object-folder name="Plataformas">
+                    <object-type name="ChaoEgito" sid="832889433931244">
+                        <plugin id="TiledBg" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="840471417778282">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="C:\Users\Usuário\Downloads\jogo-tcc\egito\terra-egito.png" />
+                    </object-type>
+                    <object-type name="Plataformas_Ext" sid="188023302582814">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="590549869972908">
+                                <behavior id="solid" />
+                            </behavior-type>
+                            <behavior-type name="Sine" sid="328031334032058">
+                                <behavior id="Sin" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="356448304347805" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="MarEgito" sid="938879172210932">
+                        <plugin id="TiledBg" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="691874284055185">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <texture original-source="C:\Users\Usuário\Downloads\jogo-tcc\egito\água.png" />
+                    </object-type>
+                    <object-type name="BlocoTijolos" sid="175774046329379">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="810268790931776">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="303073721187094" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.500521" original-source="C:\Users\Usuário\Downloads\jogo-tcc\TIJOLO.png">
+                                    <collision-poly>
+                                        <point x="0.0169903" y="0.0364963" />
+                                        <point x="0.5" y="0.00312826" />
+                                        <point x="0.948544" y="0.110532" />
+                                        <point x="0.999029" y="0.499479" />
+                                        <point x="0.958738" y="0.911366" />
+                                        <point x="0.5" y="0.997914" />
+                                        <point x="0.00776699" y="0.983316" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Plataformas_Int" sid="696205478225674">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="719161899379686">
+                                <behavior id="solid" />
+                            </behavior-type>
+                            <behavior-type name="Sine" sid="723640265248173">
+                                <behavior id="Sin" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="273389684729280" speed="5">
+                                <frame duration="1" hotspotX="0.524272" hotspotY="0.473684" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Escada" sid="457814218420174">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="873979256140285">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="261653365416541" speed="5">
+                                <frame duration="1" hotspotX="0.500907" hotspotY="0.506812" original-source="C:\Users\Usuário\Downloads\jogo-tcc\egito\escada.png">
+                                    <collision-poly>
+                                        <point x="0.000907433" y="0.0354223" />
+                                        <point x="0.135209" y="0.00340599" />
+                                        <point x="0.274954" y="0.0027248" />
+                                        <point x="0.274501" y="0.085831" />
+                                        <point x="0.345508" y="0.085831" />
+                                        <point x="0.345168" y="0.169618" />
+                                        <point x="0.382203" y="0.169278" />
+                                        <point x="0.382572" y="0.246764" />
+                                        <point x="0.444462" y="0.24736" />
+                                        <point x="0.444646" y="0.332425" />
+                                        <point x="0.508167" y="0.333788" />
+                                        <point x="0.509075" y="0.418937" />
+                                        <point x="0.583031" y="0.419278" />
+                                        <point x="0.582577" y="0.504087" />
+                                        <point x="0.657895" y="0.504087" />
+                                        <point x="0.657441" y="0.595367" />
+                                        <point x="0.728901" y="0.596048" />
+                                        <point x="0.729242" y="0.680858" />
+                                        <point x="0.799455" y="0.679836" />
+                                        <point x="0.799909" y="0.766349" />
+                                        <point x="0.878176" y="0.766008" />
+                                        <point x="0.878289" y="0.854394" />
+                                        <point x="0.932792" y="0.85499" />
+                                        <point x="0.933728" y="0.919321" />
+                                        <point x="1" y="0.918256" />
+                                        <point x="1" y="0.998637" />
+                                        <point x="0.778584" y="0.997275" />
+                                        <point x="0.22323" y="0.313351" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Armadilha" sid="770653819466354">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="371218992379462">
+                                <behavior id="solid" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="153300237578719" speed="5">
+                                <frame duration="1" hotspotX="0.54321" hotspotY="0.575" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Plataformas_IntFake" sid="693583757431729">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Solid" sid="313726261664841">
+                                <behavior id="solid" />
+                            </behavior-type>
+                            <behavior-type name="Sine" sid="534513572422443">
+                                <behavior id="Sin" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="899271030303070" speed="5">
+                                <frame duration="1" hotspotX="0.524272" hotspotY="0.473684" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="Extra" sid="442776007000995">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="645985662479169" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-type name="BarreiraInvisible" sid="646498960834020">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="662514556903168">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="825314249958003" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="FalaExtraPiramide" sid="212761819096198">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="393294510324597" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Tutorial">
+                <object-type name="TelaGame" sid="940875415378946">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="228751150233683" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.500803" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\WhatsApp Image 2019-11-14 at 5.20.59 PM.jpeg" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Marcacao1" sid="528307319009654">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="578273289347449" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.473684" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\PNG\Tiles\platformPack_tile021.png">
+                                <collision-poly>
+                                    <point x="0.111111" y="0.105263" />
+                                    <point x="1" y="0.105263" />
+                                    <point x="1" y="1" />
+                                    <point x="0.111111" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Marcacao2" sid="651158510815497">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="373008880904854" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.473684" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\PNG\Tiles\platformPack_tile021.png">
+                                <collision-poly>
+                                    <point x="0.111111" y="0.105263" />
+                                    <point x="1" y="0.105263" />
+                                    <point x="1" y="1" />
+                                    <point x="0.111111" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Marcacao3" sid="449925330109491">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="615833516594594" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.473684" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\PNG\Tiles\platformPack_tile021.png">
+                                <collision-poly>
+                                    <point x="0.111111" y="0.105263" />
+                                    <point x="1" y="0.105263" />
+                                    <point x="1" y="1" />
+                                    <point x="0.111111" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Marcacao4" sid="922719371929663">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="696867518911879" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.473684" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\PNG\Tiles\platformPack_tile021.png">
+                                <collision-poly>
+                                    <point x="0.111111" y="0.105263" />
+                                    <point x="1" y="0.105263" />
+                                    <point x="1" y="1" />
+                                    <point x="0.111111" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="TextConfig2" sid="329119365926734">
+                    <plugin id="Text" />
+                </object-type>
+                <object-type name="Seta1" sid="140726113962330">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="953525516275414" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\PNG\Items\platformPack_item018.png">
+                                <collision-poly>
+                                    <point x="0.25" y="0" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.75" y="0" />
+                                    <point x="0.96875" y="0" />
+                                    <point x="0.75" y="0.5" />
+                                    <point x="0.5" y="0.9375" />
+                                    <point x="0.25" y="0.5" />
+                                    <point x="0.03125" y="0" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-type name="Transicao" sid="393029935346319">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="790979684461705">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="549433638752637" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Morte" sid="221770563472921">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="741593697230358" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="AvisoVida" sid="374978943383779">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="vireDireita" sid="399145085853338">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="596673160506363" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="vireEsquerda" sid="503120151127216">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="374394624805586" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Personagem">
+            <object-type name="Personagem" sid="599688061141877">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Poder" sid="579682104114672" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Platform" sid="558654800744888">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="BoundToLayout" sid="555627786438266">
+                        <behavior id="bound" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="15" loop="1" name="I_Correndo" pingpong="0" repeatcount="1" repeatto="0" sid="422318947551004" speed="12">
+                        <frame duration="1" hotspotX="0.502762" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.154696" y="0.103321" />
+                                <point x="0.497238" y="0.00738007" />
+                                <point x="0.867403" y="0.0885609" />
+                                <point x="0.966851" y="0.498155" />
+                                <point x="0.425414" y="0.708487" />
+                                <point x="0.400553" y="1" />
+                                <point x="0.104972" y="0.922509" />
+                                <point x="0.0552486" y="0.498155" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502703" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.154696" y="0.103321" />
+                                <point x="0.497238" y="0.00738007" />
+                                <point x="0.867403" y="0.0885609" />
+                                <point x="0.966851" y="0.498155" />
+                                <point x="0.425414" y="0.708487" />
+                                <point x="0.319471" y="1" />
+                                <point x="0.213081" y="0.755843" />
+                                <point x="0.0552486" y="0.498155" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.154696" y="0.103321" />
+                                <point x="0.497238" y="0.00738007" />
+                                <point x="0.867403" y="0.0885609" />
+                                <point x="0.966851" y="0.498155" />
+                                <point x="0.425414" y="0.708487" />
+                                <point x="0.504948" y="0.957295" />
+                                <point x="0.132445" y="0.94742" />
+                                <point x="0.225578" y="0.747265" />
+                                <point x="0.0384615" y="0.51782" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502793" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.154696" y="0.103321" />
+                                <point x="0.497238" y="0.00738007" />
+                                <point x="0.867403" y="0.0885609" />
+                                <point x="0.966851" y="0.498155" />
+                                <point x="0.553906" y="0.69345" />
+                                <point x="0.691055" y="0.951128" />
+                                <point x="0.104972" y="0.922509" />
+                                <point x="0.0552486" y="0.498155" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.154696" y="0.103321" />
+                                <point x="0.497238" y="0.00738007" />
+                                <point x="0.867403" y="0.0885609" />
+                                <point x="0.966851" y="0.498155" />
+                                <point x="0.425414" y="0.708487" />
+                                <point x="0.690325" y="0.976923" />
+                                <point x="0.104972" y="0.922509" />
+                                <point x="0.0552486" y="0.498155" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.154696" y="0.103321" />
+                                <point x="0.497238" y="0.00738007" />
+                                <point x="0.867403" y="0.0885609" />
+                                <point x="0.966851" y="0.498155" />
+                                <point x="0.477139" y="0.716034" />
+                                <point x="0.653426" y="0.988679" />
+                                <point x="0.104972" y="0.922509" />
+                                <point x="0.0552486" y="0.498155" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502825" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.154696" y="0.103321" />
+                                <point x="0.497238" y="0.00738007" />
+                                <point x="0.867403" y="0.0885609" />
+                                <point x="0.966851" y="0.498155" />
+                                <point x="0.425414" y="0.708487" />
+                                <point x="0.400553" y="1" />
+                                <point x="0.104972" y="0.922509" />
+                                <point x="0.0552486" y="0.498155" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.154696" y="0.103321" />
+                                <point x="0.497238" y="0.00738007" />
+                                <point x="0.867403" y="0.0885609" />
+                                <point x="0.966851" y="0.498155" />
+                                <point x="0.425414" y="0.708487" />
+                                <point x="0.400553" y="1" />
+                                <point x="0.104972" y="0.922509" />
+                                <point x="0.0552486" y="0.498155" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502857" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.154696" y="0.103321" />
+                                <point x="0.497238" y="0.00738007" />
+                                <point x="0.867403" y="0.0885609" />
+                                <point x="0.966851" y="0.498155" />
+                                <point x="0.425414" y="0.708487" />
+                                <point x="0.400553" y="1" />
+                                <point x="0.104972" y="0.922509" />
+                                <point x="0.0552486" y="0.498155" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502825" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.154696" y="0.103321" />
+                                <point x="0.497238" y="0.00738007" />
+                                <point x="0.867403" y="0.0885609" />
+                                <point x="0.966851" y="0.498155" />
+                                <point x="0.425414" y="0.708487" />
+                                <point x="0.400553" y="1" />
+                                <point x="0.104972" y="0.922509" />
+                                <point x="0.0552486" y="0.498155" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.154696" y="0.103321" />
+                                <point x="0.497238" y="0.00738007" />
+                                <point x="0.867403" y="0.0885609" />
+                                <point x="0.966851" y="0.498155" />
+                                <point x="0.425414" y="0.708487" />
+                                <point x="0.400553" y="1" />
+                                <point x="0.104972" y="0.922509" />
+                                <point x="0.0552486" y="0.498155" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502762" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.154696" y="0.103321" />
+                                <point x="0.497238" y="0.00738007" />
+                                <point x="0.867403" y="0.0885609" />
+                                <point x="0.966851" y="0.498155" />
+                                <point x="0.425414" y="0.708487" />
+                                <point x="0.400553" y="1" />
+                                <point x="0.104972" y="0.922509" />
+                                <point x="0.0552486" y="0.498155" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502732" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.154696" y="0.103321" />
+                                <point x="0.497238" y="0.00738007" />
+                                <point x="0.867403" y="0.0885609" />
+                                <point x="0.966851" y="0.498155" />
+                                <point x="0.425414" y="0.708487" />
+                                <point x="0.400553" y="1" />
+                                <point x="0.104972" y="0.922509" />
+                                <point x="0.0552486" y="0.498155" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.154696" y="0.103321" />
+                                <point x="0.497238" y="0.00738007" />
+                                <point x="0.867403" y="0.0885609" />
+                                <point x="0.966851" y="0.498155" />
+                                <point x="0.425414" y="0.708487" />
+                                <point x="0.400553" y="1" />
+                                <point x="0.104972" y="0.922509" />
+                                <point x="0.0552486" y="0.498155" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502857" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.154696" y="0.103321" />
+                                <point x="0.497238" y="0.00738007" />
+                                <point x="0.867403" y="0.0885609" />
+                                <point x="0.966851" y="0.498155" />
+                                <point x="0.425414" y="0.708487" />
+                                <point x="0.400553" y="1" />
+                                <point x="0.104972" y="0.922509" />
+                                <point x="0.0552486" y="0.498155" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="4" loop="0" name="I_Pulando" pingpong="0" repeatcount="1" repeatto="0" sid="333879600840850" speed="10">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.177778" y="0.113074" />
+                                <point x="0.5" y="0.0106007" />
+                                <point x="0.883333" y="0.0742049" />
+                                <point x="0.955556" y="0.498233" />
+                                <point x="0.655556" y="0.780919" />
+                                <point x="0.5" y="0.992933" />
+                                <point x="0.208786" y="0.985214" />
+                                <point x="0.0166667" y="0.498233" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502825" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.177778" y="0.113074" />
+                                <point x="0.5" y="0.0106007" />
+                                <point x="0.883333" y="0.0742049" />
+                                <point x="0.955556" y="0.498233" />
+                                <point x="0.604708" y="0.729938" />
+                                <point x="0.5" y="0.992933" />
+                                <point x="0.0972694" y="0.712354" />
+                                <point x="0.0166667" y="0.498233" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.177778" y="0.113074" />
+                                <point x="0.5" y="0.0106007" />
+                                <point x="0.883333" y="0.0742049" />
+                                <point x="0.955556" y="0.498233" />
+                                <point x="0.44127" y="0.703399" />
+                                <point x="0.472527" y="0.981305" />
+                                <point x="0.0468254" y="0.702139" />
+                                <point x="0.0166667" y="0.498233" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.177778" y="0.113074" />
+                                <point x="0.5" y="0.0106007" />
+                                <point x="0.883333" y="0.0742049" />
+                                <point x="0.955556" y="0.498233" />
+                                <point x="0.591726" y="0.73972" />
+                                <point x="0.414894" y="1" />
+                                <point x="0.170686" y="0.751525" />
+                                <point x="0.0166667" y="0.498233" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="I_Parada" pingpong="0" repeatcount="1" repeatto="0" sid="261027287687507" speed="5">
+                        <frame duration="1" hotspotX="0.502703" hotspotY="1" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\Ifalda\ifalda de frente.png">
+                            <collision-poly>
+                                <point x="0.151316" y="0.113412" />
+                                <point x="0.5" y="0.000986193" />
+                                <point x="0.886842" y="0.0848126" />
+                                <point x="0.998684" y="0.5" />
+                                <point x="0.771053" y="0.828402" />
+                                <point x="0.489474" y="1" />
+                                <point x="0.211842" y="0.841223" />
+                                <point x="0.00921053" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Falas">
+            <object-type name="IfaldaFalando" sid="197243744027852">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="555502779720898" speed="5">
+                        <frame duration="1" hotspotX="0.498688" hotspotY="0.5" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\Ifalda\ifalda de frente.png">
+                            <collision-poly>
+                                <point x="0.108054" y="0.414725" />
+                                <point x="0.268169" y="0.0283565" />
+                                <point x="0.811888" y="0.293656" />
+                                <point x="0.935309" y="0.557903" />
+                                <point x="0.72516" y="0.79583" />
+                                <point x="0.268169" y="0.704238" />
+                                <point x="0.22814" y="0.664233" />
+                                <point x="0.0813693" y="0.557903" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BarraFala" sid="761759054706962">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="191613387635616" speed="5">
+                        <frame duration="1" hotspotX="0.501901" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Fala" sid="241517692898651">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="BTTContinuar" sid="662766557337999">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="329155203697678" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.492126" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\botoes\volta.png">
+                            <collision-poly>
+                                <point x="0.15748" y="0.137795" />
+                                <point x="0.5" y="0.00393701" />
+                                <point x="0.84252" y="0.137795" />
+                                <point x="0.996063" y="0.488189" />
+                                <point x="0.850394" y="0.850394" />
+                                <point x="0.5" y="0.996063" />
+                                <point x="0.149606" y="0.850394" />
+                                <point x="0.00393701" y="0.488189" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BTTContinuar2" sid="686019997254287">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="353771700520663" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.492126" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\botoes\volta.png">
+                            <collision-poly>
+                                <point x="0.15748" y="0.137795" />
+                                <point x="0.5" y="0.00393701" />
+                                <point x="0.84252" y="0.137795" />
+                                <point x="0.996063" y="0.488189" />
+                                <point x="0.850394" y="0.850394" />
+                                <point x="0.5" y="0.996063" />
+                                <point x="0.149606" y="0.850394" />
+                                <point x="0.00393701" y="0.488189" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Falas_Maias" sid="278153342966287">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text" sid="613816981792575">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="EspacoCivilizacao" sid="805462779988968">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="200149422930821" speed="5">
+                        <frame duration="1" hotspotX="0.497674" hotspotY="0.498607" original-source="C:\Users\Usuário\Downloads\ngc pra guardar os quadrados do inventario.png">
+                            <collision-poly>
+                                <point x="0.939535" y="0.0362117" />
+                                <point x="0.990698" y="0.498607" />
+                                <point x="0.87907" y="0.927577" />
+                                <point x="0.502326" y="0.930362" />
+                                <point x="0.0511628" y="0.969359" />
+                                <point x="0.0325581" y="0.498607" />
+                                <point x="0.0511628" y="0.0306407" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SethFalando" sid="393551383525233">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="110471473151176" speed="5">
+                        <frame duration="1" hotspotX="0.502146" hotspotY="0.5" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\Ifalda\aaa.png">
+                            <collision-poly>
+                                <point x="0.0944206" y="0.0413534" />
+                                <point x="0.497854" y="0.0789474" />
+                                <point x="0.682403" y="0.139098" />
+                                <point x="0.639485" y="0.5" />
+                                <point x="0.969957" y="0.986842" />
+                                <point x="0.497854" y="0.819549" />
+                                <point x="0.141631" y="0.93797" />
+                                <point x="0.180258" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Bloco" sid="884813064401654">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="250658881211109" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Cutscene">
+            <object-type name="C1" sid="963608387449989">
+                <plugin id="video" />
+            </object-type>
+            <object-type name="C2" sid="129772433629336">
+                <plugin id="video" />
+            </object-type>
+        </object-folder>
+        <object-type name="Sprite" sid="887089874523004">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="743570043565758" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PoderLancado" sid="915236748418165">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="996944484829319">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="947474016074927" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.505017" hotspotY="0.509537" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\poderegito.png">
+                        <collision-poly>
+                            <point x="0.354515" y="0.288828" />
+                            <point x="0.505017" y="0.0027248" />
+                            <point x="0.605351" y="0.3297" />
+                            <point x="0.87291" y="0.509537" />
+                            <point x="0.876254" y="0.910082" />
+                            <point x="0.505017" y="0.978202" />
+                            <point x="0.107023" y="0.93188" />
+                            <point x="0.090301" y="0.509537" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\podermaia.png">
+                        <collision-poly>
+                            <point x="0.971591" y="0.319149" />
+                            <point x="1" y="0.489362" />
+                            <point x="0.969697" y="0.659574" />
+                            <point x="0.5" y="0.553191" />
+                            <point x="0.0227273" y="0.744681" />
+                            <point x="0.00568181" y="0.489362" />
+                            <point x="0.0151515" y="0.170213" />
+                            <point x="0.5" y="0.404255" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500921" hotspotY="0.5" original-source="C:\Users\Adriangela\Desktop\fernnada\if\O Elo Perdido\poderasteca.png">
+                        <collision-poly>
+                            <point x="0.0331492" y="0.147541" />
+                            <point x="0.499079" y="0.172131" />
+                            <point x="0.976059" y="0.106557" />
+                            <point x="0.998158" y="0.5" />
+                            <point x="0.977901" y="0.901639" />
+                            <point x="0.499079" y="0.631148" />
+                            <point x="0.13628" y="0.393443" />
+                            <point x="0.233886" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>Configuracoes.xml</layout>
+        <layout>Tutorial.xml</layout>
+        <layout>Caral.xml</layout>
+        <layout>Maias.xml</layout>
+        <layout>Egito_Ext.xml</layout>
+        <layout>Egito_Int.xml</layout>
+        <layout>Astecas.xml</layout>
+        <layout>Creditos.xml</layout>
+        <layout>Cutscene1.xml</layout>
+        <layout>Cutscene2.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>eMenu.xml</event-sheet>
+        <event-sheet>eIfalda.xml</event-sheet>
+        <event-sheet>eConfiguracoes.xml</event-sheet>
+        <event-sheet>eHUD.xml</event-sheet>
+        <event-sheet>eCaral.xml</event-sheet>
+        <event-sheet>eCamera.xml</event-sheet>
+        <event-sheet>eMaias.xml</event-sheet>
+        <event-sheet>eEgito_Ext.xml</event-sheet>
+        <event-sheet>eEgito_Int.xml</event-sheet>
+        <event-sheet>eAstecas.xml</event-sheet>
+        <event-sheet>eCreditos.xml</event-sheet>
+        <event-sheet>eCutscene1.xml</event-sheet>
+        <event-sheet>eCutscene2.xml</event-sheet>
+        <event-sheet>eLimiteDeVida.xml</event-sheet>
+        <event-sheet>ePoderes.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="5" />
+        <global-instance type="Keyboard" uid="6" />
+        <global-instance type="Browser" uid="7" />
+        <global-instance type="Audio" uid="295">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="(clique em botões).m4a" />
+        <file name="(clique em botões).ogg" />
+        <file name="Teste_2_MASTERIZADO..m4a" />
+        <file name="Teste_2_MASTERIZADO..ogg" />
+        <file name="(coleta de objetos).m4a" />
+        <file name="(coleta de objetos).ogg" />
+        <file name="(jump).m4a" />
+        <file name="(jump).ogg" />
+        <file name="(openbag).m4a" />
+        <file name="(openbag).ogg" />
+        <file name="the_field_of_dreams (online-audio-converter.com).m4a" />
+        <file name="the_field_of_dreams (online-audio-converter.com).ogg" />
+        <file name="old city theme.m4a" />
+        <file name="old city theme.ogg" />
+        <file name="little town - orchestral.ogg" />
+        <file name="adventuring_song (online-audio-converter.com).m4a" />
+        <file name="adventuring_song (online-audio-converter.com).ogg" />
+        <file name="another egyptian theme.ogg" />
+        <file name="quest for the golden cat idol.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file name="CutsceneInicio.mp4" />
+        <file name="CutsceneFim.mp4" />
+    </files-folder>
+</c2project>

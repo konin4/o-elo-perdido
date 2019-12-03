@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eIfalda</name>
+    <events>
+        <variable constant="0" name="PoderMirror" sid="360522547782800" static="0" type="number">0</variable>
+        <include>eLimiteDeVida</include>
+        <variable constant="0" name="TamanhoFinalBARRA" sid="952510514358884" static="0" type="number">0</variable>
+        <variable constant="0" name="HPxTamanhoBarraMax" sid="798207691377506" static="0" type="number">0</variable>
+        <variable constant="0" name="HP" sid="708753461773642" static="0" type="number">100</variable>
+        <variable constant="0" name="HP_Max" sid="969592287796252" static="0" type="number">100</variable>
+        <event-group description="" sid="326891206680953" title="Movimentos">
+            <sub-events>
+                <event-block any="1" sid="467314486782553">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="565468855316854" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                        <condition id="0" name="On key pressed" sid="300051707038710" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="132794668526398" type="Personagem">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="841990591211725" type="Personagem">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="463809873742929" type="Personagem">
+                            <param id="0" name="Animation">&quot;I_Correndo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="419590617814546" type="System">
+                            <param id="0" name="Variable">PoderMirror</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="127136029146968">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="832137688815501" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                        <condition id="0" name="On key pressed" sid="366201327649199" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="582964289104701" type="Personagem">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="317997477312603" type="Personagem">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="822312784550851" type="Personagem">
+                            <param id="0" name="Animation">&quot;I_Correndo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="981986262564533" type="System">
+                            <param id="0" name="Variable">PoderMirror</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="648092567958612">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="243263778807554" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                        <condition id="0" name="On key pressed" sid="756405073557689" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="299126212775241" type="Personagem">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="476434423637738" type="Personagem">
+                            <param id="0" name="Animation">&quot;I_Pulando&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="657581555477246" type="Audio">
+                            <param id="0" name="Audio file">(jump)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="680572268534349">
+                    <conditions>
+                        <condition behavior="Platform" id="7" name="On stopped" sid="328872489770977" type="Personagem" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="454332588372434" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="193328622911774" type="Personagem">
+                            <param id="0" name="Animation">&quot;I_Parada&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="543860342400059" title="Barra de Vida">
+            <sub-events>
+                <event-block sid="805979792429217">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="566724150291290" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="662184219313067" type="AvisoVida">
+                            <param id="0" name="X">Personagem.X-10</param>
+                            <param id="1" name="Y">Personagem.Y-80</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="488867014517062">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="515704262310355" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="176568120840652" type="Score">
+                            <param id="0" name="Text">Score</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="680202922667387">
+                    <conditions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="283850485122789" type="System">
+                            <param id="0" name="Variable">HPxTamanhoBarraMax</param>
+                            <param id="1" name="Value">HP*175</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="849171580438252" type="System">
+                            <param id="0" name="Variable">TamanhoFinalBARRA</param>
+                            <param id="1" name="Value">HPxTamanhoBarraMax/HP_Max</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="735794155306699" type="HP">
+                            <param id="0" name="Width">TamanhoFinalBARRA</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="390585122001310">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="883087602853286" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="625795601859080" type="TxT_HPAtual">
+                            <param id="0" name="Text">HP</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="623006424285218">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="427602073467561" type="Keyboard">
+                            <param id="0" name="Key">81 (Q)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="482397939374591" type="System">
+                            <param id="0" name="Variable">HP</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="861093019713631">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="456179421260756" type="Keyboard">
+                            <param id="0" name="Key">82 (R)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="355527473356779" type="System">
+                            <param id="0" name="Variable">HP</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="822239935969885" title="Morte">
+            <sub-events>
+                <event-block sid="939741220577859">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="213059789116786" type="Personagem">
+                            <param id="0" name="Object">Morte</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="189503583133550" type="Personagem" />
+                        <action id="-15" name="Set visible" sid="313081295256816" type="Transicao">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="819197132227126" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="717048960156297" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="895409184120240">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="403915203082055" type="System">
+                            <param id="0" name="Variable">HP</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="679448065839850" type="Personagem" />
+                        <action id="-16" name="Wait" sid="147467098653521" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="863812811314864" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="809555352387767">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="653895479135801" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="117406252666998" type="Personagem">
+                    <param id="0" name="Instance variable">Poder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

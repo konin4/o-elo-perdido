@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eCutscene1</name>
+    <events>
+        <event-block sid="573081898864651">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="128190261856811" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set source" sid="200674895911715" type="C1">
+                    <param id="0" name="WebM source">&quot;CutsceneInicio.mp4&quot;</param>
+                    <param id="1" name="Ogg Theora source">&quot;&quot;</param>
+                    <param id="2" name="H.264 source">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="155143442221847" type="Audio">
+                    <param id="0" name="Audio file">the_field_of_dreams (online-audio-converter.com)</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;cutscene&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="602919552521101">
+            <conditions>
+                <condition id="2" name="Has ended" sid="195259434339769" type="C1" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="434772491861965" type="Transicao">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="588797905402346" type="Transicao" />
+                <action id="6" name="Stop" sid="118559693232652" type="Audio">
+                    <param id="0" name="Tag">&quot;cutscene&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="761663182113857" type="System">
+                    <param id="0" name="Layout">Caral</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

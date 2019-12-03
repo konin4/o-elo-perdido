@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eMenu</name>
+    <events>
+        <event-block sid="782212842774813">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="150141197798938" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ButtonPlay</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="654412136550604" type="Audio">
+                    <param id="0" name="Audio file">(clique em botões)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Clicar no botão&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="303680528490849" type="System">
+                    <param id="0" name="Layout">Cutscene1</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="877699989979141" type="Personagem">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="350297739978702" type="System">
+                    <param id="0" name="Variable">Vida</param>
+                    <param id="1" name="Value">100</param>
+                </action>
+                <action id="-9" name="Set value" sid="203674924931071" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="6" name="Stop" sid="429723043556804" type="Audio">
+                    <param id="0" name="Tag">&quot;musica principal&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="710769324205111">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="954052254594492" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ButtonConfig</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="738655443057757" type="Audio">
+                    <param id="0" name="Audio file">(clique em botões)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Clicar no botão&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="688931931969019" type="System">
+                    <param id="0" name="Layout">Configuracoes</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="902724714187726">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="565884327126911" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ButtonExit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="123266081427971" type="Audio">
+                    <param id="0" name="Audio file">(clique em botões)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Clicar no botão&quot;</param>
+                </action>
+                <action id="1" name="Close" sid="994059992158909" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="838554409519732">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="786126068954402" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="757909105506014" type="Audio">
+                    <param id="0" name="Audio file">Teste_2_MASTERIZADO.</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;musica principal&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

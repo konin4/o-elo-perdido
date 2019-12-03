@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eCutscene2</name>
+    <events>
+        <event-block sid="867723054370258">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="984976268618430" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set source" sid="694748452368988" type="C2">
+                    <param id="0" name="WebM source">&quot;CutsceneFim.mp4&quot;</param>
+                    <param id="1" name="Ogg Theora source">&quot;&quot;</param>
+                    <param id="2" name="H.264 source">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="830850143279786" type="Audio">
+                    <param id="0" name="Audio file">the_field_of_dreams (online-audio-converter.com)</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;cutscene&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="177969560440973">
+            <conditions>
+                <condition id="2" name="Has ended" sid="345686146913584" type="C2" />
+            </conditions>
+            <actions>
+                <action disabled="1" id="-15" name="Set visible" sid="602426308512001" type="Transicao">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" disabled="1" id="1" name="Start fade" sid="962939230098374" type="Transicao" />
+                <action id="6" name="Stop" sid="479827314378364" type="Audio">
+                    <param id="0" name="Tag">&quot;cutscene&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="811712626005373" type="System">
+                    <param id="0" name="Layout">Creditos</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

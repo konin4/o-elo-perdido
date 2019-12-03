@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eAstecas</name>
+    <events>
+        <include>ePoderes</include>
+        <include>eIfalda</include>
+        <include>eHUD</include>
+        <include>eCamera</include>
+        <event-block sid="971810193886991">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="197828064164583" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="722596218314611" type="Fala">
+                    <param id="0" name="Family name">&quot;Source Sans Pro&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&amp;display=swap&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="750539108577830" type="BoxCivilizacao">
+                    <param id="0" name="Family name">&quot;Source Sans Pro&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&amp;display=swap&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="483280168274423" type="Audio">
+                    <param id="0" name="Audio file">little town - orchestral</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;faseasteca&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="187182919414322">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="335947744505891" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="539294002794188" type="INVENTCaledárioMaia">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="716649396008056" type="INVENTPapiro">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="949379287758168" type="INVENTQuipo">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="928109979259149" title="Espanhol">
+            <sub-events>
+                <event-block sid="716151833728545">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="213103794156001" type="Espanhol">
+                            <param id="0" name="Instance variable">direcaoEspanhol</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="368819219865169" type="Espanhol">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="953441061451339" type="Espanhol">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="766792374940567">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="205759129907859" type="Espanhol">
+                            <param id="0" name="Instance variable">direcaoEspanhol</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="311547892591563" type="Espanhol">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="983656702348257" type="Espanhol">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="718205048232612">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="257787870574730" type="Espanhol">
+                            <param id="0" name="Object">vireEsquerda</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="762879441901011" type="Espanhol">
+                            <param id="0" name="Instance variable">direcaoEspanhol</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="780733359459617" type="Espanhol">
+                            <param id="0" name="Instance variable">direcaoEspanhol</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="727848455738976">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="921842424562334" type="Espanhol">
+                            <param id="0" name="Object">vireDireita</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="714727001793352" type="Espanhol">
+                            <param id="0" name="Instance variable">direcaoEspanhol</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="716925263747055" type="Espanhol">
+                            <param id="0" name="Instance variable">direcaoEspanhol</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="257196458053620">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="139487584656799" type="Espanhol">
+                            <param id="0" name="Object">PoderLancado</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="225058967866982" type="Espanhol" />
+                        <action id="-15" name="Set visible" sid="799410604120949" type="PoderLancado">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="777932831896580" title="RecompensasA">
+            <sub-events>
+                <event-block sid="587436291937950">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="503894738932502" type="Personagem">
+                            <param id="0" name="Object">Arma</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="354150700433241" type="Audio">
+                            <param id="0" name="Audio file">(coleta de objetos)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;coleta&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="536410772146145" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="300413313598373" type="Personagem">
+                            <param id="0" name="Instance variable">Poder</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="230368679491036" type="Arma" />
+                        <action id="-15" name="Set visible" sid="147302988786234" type="PODERArma">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="489627269473877">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="115564708074411" type="Personagem">
+                            <param id="0" name="Object">EstatuaAsteca</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="197284260460432" type="Audio">
+                            <param id="0" name="Audio file">(coleta de objetos)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;coleta&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="843616685610919" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="678212822426782" type="EstatuaAsteca" />
+                    </actions>
+                </event-block>
+                <event-block sid="798531504948982">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="545313408143804" type="Personagem">
+                            <param id="0" name="Object">Cobra</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="801356262395795" type="Audio">
+                            <param id="0" name="Audio file">(coleta de objetos)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;coleta&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="753966441997763" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">7</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="453033870286456" type="Cobra" />
+                    </actions>
+                </event-block>
+                <event-block sid="866918970422022">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="696406771208888" type="Personagem">
+                            <param id="0" name="Object">ColarAsteca</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="707341055598190" type="Audio">
+                            <param id="0" name="Audio file">(coleta de objetos)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;coleta&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="699892545689039" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="833289242860915" type="ColarAsteca" />
+                    </actions>
+                </event-block>
+                <event-block sid="288364319808051">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="750150893226411" type="Personagem">
+                            <param id="0" name="Object">CalendarioAsteca</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="741677195760523" type="Audio">
+                            <param id="0" name="Audio file">(coleta de objetos)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;coleta&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="947037477517479" type="CalendarioAsteca" />
+                        <action id="-13" name="Set time scale" sid="220855092602453" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="362519719567437" type="System">
+                            <param id="0" name="Layer">8</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="587409428524195" type="Fala">
+                            <param id="0" name="Text">&quot;A pedra do sol, esse artefato diz muito sobre os mitos astecas e sobre sua relação com o tempo. Esse objeto vai ser perfeito para meu estudo!&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="642212976066674" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="352927672575318" type="BarraFala">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="970166642670071" type="Fala">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="126145588537860" type="IfaldaFalando">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="424121549034721" type="System">
+                            <param id="0" name="Layer">8</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="700291579568418" type="System">
+                            <param id="0" name="Time scale">1.0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="633518955278207" type="INVENTCalendarioAsteca">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="991151215828889" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="585865723856930" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="828572957835258" type="System">
+                            <param id="0" name="Layer">8</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="175684836204120" type="Fala">
+                            <param id="0" name="Text">&quot;Todos esses povos pelos quais passei têm uma relação muito forte com os céus em sua mitologia, todos construíram pirâmides... Sinto que estou muito perto do meu objetivo.&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="327080867573460" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="699951994685355" type="BarraFala">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="120315919170412" type="Fala">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="991861307468823" type="IfaldaFalando">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="184169107638170" type="System">
+                            <param id="0" name="Layer">8</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="657454020682211" type="System">
+                            <param id="0" name="Time scale">1.0</param>
+                        </action>
+                        <action id="6" name="Stop" sid="764849847624525" type="Audio">
+                            <param id="0" name="Tag">&quot;faseasteca&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="754382359224197" type="System">
+                            <param id="0" name="Layout">Cutscene2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="165737615718574">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="273098876173948" type="Personagem">
+                            <param id="0" name="Object">MilhoVida</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="240371552326110" type="Audio">
+                            <param id="0" name="Audio file">(coleta de objetos)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;coleta&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="876763600403997" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="782140602576708" type="MilhoVida" />
+                    </actions>
+                </event-block>
+                <event-block sid="350365764703425">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="555163387011323" type="Personagem">
+                            <param id="0" name="Object">PoderAsteca</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="553054828334760" type="Audio">
+                            <param id="0" name="Audio file">(coleta de objetos)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;coleta&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="846770018225841" type="PODERArma">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="171053056481378" type="PoderAsteca" />
+                        <action id="-9" name="Set value" sid="648852058788893" type="System">
+                            <param id="0" name="Variable">Poder</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="973778328296128" type="PoderLancado">
+                            <param id="0" name="Frame number">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="126297589238491">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="358360878019890" type="PoderLancado">
+                            <param id="0" name="Object">ChaoAsteca</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="666173407437599" type="PoderLancado">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="474341662503031" title="DanosA">
+            <sub-events>
+                <event-block sid="701617241557651">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="313304614211960" type="Personagem">
+                            <param id="0" name="Object">Espanhol</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="774991758307273" type="AvisoVida">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="529708043875712" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="398358596892827" type="AvisoVida">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="762493303812778" type="System">
+                            <param id="0" name="Variable">HP</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="781347061293340" title="FalasA">
+            <sub-events>
+                <event-block sid="647102235813681">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="910149480342060" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="420647008004243" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="498099881844889" type="System">
+                            <param id="0" name="Layer">4</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="351253627508648" type="BoxCivilizacao">
+                            <param id="0" name="Text">&quot;Tenochtitlán, Império Asteca&#x0D;&#x0A;1520 d.C.&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="891742763082949" type="EspacoCivilizacao">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="552431303371116" type="BoxCivilizacao">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="763242062848463" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="118421533546873" type="EspacoCivilizacao">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="469526797087683" type="BoxCivilizacao">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-42" name="Signal" sid="536828132558550" type="System">
+                            <param id="0" name="Tag">&quot;Box5&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="405859759247979">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="370833217162934" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-41" name="Wait for signal" sid="100769785346685" type="System">
+                            <param id="0" name="Tag">&quot;Box5&quot;</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="647528711463188" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="576766189146845" type="System">
+                            <param id="0" name="Layer">8</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="750205091461772" type="BTTContinuar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="882999272537138" type="Fala">
+                            <param id="0" name="Text">&quot;Onde estou agora? Será Tenochtitlán? Sim, estou mesmo na capital do império Asteca! Esses que vêm em minha direção só podem ser soldados do invasor Hernan Cortez. Preciso me defender.&quot;</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="959984186901314" type="Mochila">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="725405737818007" type="BTTContinuar">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="336986021010998">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="320890704201779" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">BTTContinuar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="-15" name="Set visible" sid="494933844649310" type="BarraFala">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="632152091453451" type="Fala">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="289358717798747" type="IfaldaFalando">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="260123910473321" type="BTTContinuar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="491893190460752" type="System">
+                            <param id="0" name="Layer">8</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="183174280891468" type="System">
+                            <param id="0" name="Layer">7</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="761400882944127" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="274149789943934" type="System">
+                            <param id="0" name="Layer">4</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="258288948835296" type="System">
+                            <param id="0" name="Time scale">1.0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="921214045447357" type="Mochila">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

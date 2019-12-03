@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eConfiguracoes</name>
+    <events>
+        <variable constant="0" name="MscOnOff" sid="292112189885019" static="0" type="number">0</variable>
+        <event-block sid="781770337057370">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="724384279795913" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="658216328299739" type="TextConfig">
+                    <param id="0" name="Family name">&quot;Source Sans Pro&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&amp;display=swap&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="312087444573319" type="TextConfig2">
+                    <param id="0" name="Family name">&quot;Source Sans Pro&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&amp;display=swap&quot;</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="462556447717302" type="Personagem">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="411821956732082" type="System">
+                    <param id="0" name="Variable">MscOnOff</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="424351262085183" type="Musica">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="446885667976325">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="562047898525091" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ButtonBack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="259097157939761" type="Audio">
+                    <param id="0" name="Audio file">(clique em botões)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Clicar no botão&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="318433097771675" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="315319987238345">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="626585161376588" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ButtonBack2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="250343432929517" type="Audio">
+                    <param id="0" name="Audio file">(clique em botões)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Clicar no botão&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="124279743221706" type="System">
+                    <param id="0" name="Layout">Tutorial</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="127722415474385">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="754887883463528" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Musica</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="929852668157025" type="System">
+                    <param id="0" name="Variable">MscOnOff</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="540801014378934" type="Audio">
+                    <param id="0" name="Audio file">(clique em botões)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Clicar no botão&quot;</param>
+                </action>
+                <action id="5" name="Set frame" sid="927544200590568" type="Musica">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="154710388668915" type="System">
+                    <param id="0" name="Variable">MscOnOff</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="388355492307208">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="390982367590989" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Musica</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="403144088963443" type="System">
+                    <param id="0" name="Variable">MscOnOff</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="775402780290099" type="Audio">
+                    <param id="0" name="Audio file">(clique em botões)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Clicar no botão&quot;</param>
+                </action>
+                <action id="5" name="Set frame" sid="540149769593252" type="Musica">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="125310371955454" type="System">
+                    <param id="0" name="Variable">MscOnOff</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

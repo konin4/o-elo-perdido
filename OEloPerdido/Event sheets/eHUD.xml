@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eHUD</name>
+    <events>
+        <variable constant="0" name="Score" sid="302216135191069" static="0" type="number">0</variable>
+        <event-block sid="811267620628677">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="892583908160429" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Mochila</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="780623976045767" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="729211310659169" type="Mochila">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action disabled="1" id="0" name="Play" sid="523778956090687" type="Audio">
+                    <param id="0" name="Audio file">(openbag)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-30</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="749193068801684">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="138057554249415" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">1</param>
+                    <param id="2" name="Object clicked">Mochila</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="722254132213245" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="466458445521777" type="Mochila">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="536961001203215" title="Pause">
+            <sub-events>
+                <event-block sid="454534198591489">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="824831084336247" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="459310046259705" type="System">
+                            <param id="0" name="Layer">6</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="266704430497812">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="712760006683456" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">ButtonPause</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="186435880302906" type="Audio">
+                            <param id="0" name="Audio file">(clique em botões)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;Clicar no botão&quot;</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="661300212502162" type="System">
+                            <param id="0" name="Layer">6</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="947380509160868" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="788858400086065">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="238335019663320" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">ButtonPause1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="149852869236008" type="Audio">
+                            <param id="0" name="Audio file">(clique em botões)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;Clicar no botão&quot;</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="976102986541308" type="System">
+                            <param id="0" name="Layer">6</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="818055044971315" type="System">
+                            <param id="0" name="Time scale">1.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="859753439783833">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="865679798267534" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">ButtonPause3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="299287150676464" type="Audio">
+                            <param id="0" name="Audio file">(clique em botões)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;Clicar no botão&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="292049807733434" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

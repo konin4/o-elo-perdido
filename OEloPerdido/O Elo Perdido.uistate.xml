@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Menu</layout>
+        <layout order="5">Cutscene1</layout>
+        <event-sheet order="1">eMenu</event-sheet>
+        <event-sheet order="2">eCreditos</event-sheet>
+        <event-sheet order="3">eCutscene1</event-sheet>
+        <event-sheet order="4">eCutscene2</event-sheet>
+        <event-sheet active="1" order="6">eEgito_Ext</event-sheet>
+        <event-sheet order="7">eEgito_Int</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/Extras/" />
+        <folder expanded="0" path="object-folder/Layouts/" />
+        <folder expanded="0" path="object-folder/Layouts/Menu/" />
+        <folder expanded="0" path="object-folder/Layouts/HUD/" />
+        <folder expanded="0" path="object-folder/Layouts/Pause/" />
+        <folder expanded="0" path="object-folder/Layouts/Caral/" />
+        <folder expanded="0" path="object-folder/Layouts/Caral/Texturas/" />
+        <folder expanded="0" path="object-folder/Layouts/Caral/Sprites/" />
+        <folder expanded="1" path="object-folder/Layouts/Caral/Colecionáveis/" />
+        <folder expanded="0" path="object-folder/Layouts/Caral/Plataformas/" />
+        <folder expanded="0" path="object-folder/Layouts/Maias/" />
+        <folder expanded="0" path="object-folder/Layouts/Maias/Colecionáveis/" />
+        <folder expanded="0" path="object-folder/Layouts/Maias/Plataformas/" />
+        <folder expanded="0" path="object-folder/Layouts/Maias/Sprites/" />
+        <folder expanded="0" path="object-folder/Layouts/Maias/Texturas/" />
+        <folder expanded="0" path="object-folder/Layouts/Astecas/" />
+        <folder expanded="0" path="object-folder/Layouts/Astecas/Colecionáveis/" />
+        <folder expanded="0" path="object-folder/Layouts/Astecas/Plataformas/" />
+        <folder expanded="0" path="object-folder/Layouts/Astecas/Sprites/" />
+        <folder expanded="0" path="object-folder/Layouts/Astecas/Texturas/" />
+        <folder expanded="0" path="object-folder/Layouts/Neutro/" />
+        <folder expanded="0" path="object-folder/Layouts/Creditos/" />
+        <folder expanded="0" path="object-folder/Layouts/Egito/" />
+        <folder expanded="0" path="object-folder/Layouts/Egito/Colecionáveis/" />
+        <folder expanded="0" path="object-folder/Layouts/Egito/Sprites/" />
+        <folder expanded="0" path="object-folder/Layouts/Egito/Texturas/" />
+        <folder expanded="0" path="object-folder/Layouts/Egito/Plataformas/" />
+        <folder expanded="0" path="object-folder/Layouts/Tutorial/" />
+        <folder expanded="0" path="object-folder/Personagem/" />
+        <folder expanded="0" path="object-folder/Falas/" />
+        <folder expanded="0" path="object-folder/Cutscene/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Camera/" />
+        <folder expanded="1" path="animation-folder/Marcador/" />
+        <folder expanded="1" path="animation-folder/Box_de_fala/" />
+        <folder expanded="1" path="animation-folder/NomeJogo/" />
+        <folder expanded="1" path="animation-folder/ButtonExit/" />
+        <folder expanded="1" path="animation-folder/ButtonPlay/" />
+        <folder expanded="1" path="animation-folder/ButtonConfig/" />
+        <folder expanded="1" path="animation-folder/BGmenu2/" />
+        <folder expanded="1" path="animation-folder/BGmenu1/" />
+        <folder expanded="1" path="animation-folder/ObjSetas/" />
+        <folder expanded="1" path="animation-folder/ObjCtrl/" />
+        <folder expanded="1" path="animation-folder/ObjMouse/" />
+        <folder expanded="1" path="animation-folder/MusicaOFF/" />
+        <folder expanded="1" path="animation-folder/Musica/" />
+        <folder expanded="1" path="animation-folder/EfeitosOFF/" />
+        <folder expanded="1" path="animation-folder/EfeitosON/" />
+        <folder expanded="1" path="animation-folder/ButtonPause/" />
+        <folder expanded="1" path="animation-folder/Mochila/" />
+        <folder expanded="1" path="animation-folder/CaixaInventario/" />
+        <folder expanded="1" path="animation-folder/CaixaPoder/" />
+        <folder expanded="1" path="animation-folder/BoxInventario/" />
+        <folder expanded="1" path="animation-folder/ButtonClose/" />
+        <folder expanded="1" path="animation-folder/INVENTCalendarioAsteca/" />
+        <folder expanded="1" path="animation-folder/INVENTQuipo/" />
+        <folder expanded="1" path="animation-folder/INVENTPapiro/" />
+        <folder expanded="1" path="animation-folder/PODERPocaoEgito/" />
+        <folder expanded="1" path="animation-folder/INVENTCaledárioMaia/" />
+        <folder expanded="1" path="animation-folder/PODEREscaravelho/" />
+        <folder expanded="1" path="animation-folder/PODERArma/" />
+        <folder expanded="1" path="animation-folder/PODEREscriturasMaia/" />
+        <folder expanded="1" path="animation-folder/BoxPause/" />
+        <folder expanded="1" path="animation-folder/ButtonPause1/" />
+        <folder expanded="1" path="animation-folder/ButtonPause2/" />
+        <folder expanded="1" path="animation-folder/ButtonPause3/" />
+        <folder expanded="1" path="animation-folder/SolCaral/" />
+        <folder expanded="1" path="animation-folder/Nevoa/" />
+        <folder expanded="1" path="animation-folder/MarCaral/" />
+        <folder expanded="1" path="animation-folder/Cacto/" />
+        <folder expanded="1" path="animation-folder/Pedra/" />
+        <folder expanded="1" path="animation-folder/PedraTrans/" />
+        <folder expanded="1" path="animation-folder/EspinhoCaral/" />
+        <folder expanded="1" path="animation-folder/Quipo/" />
+        <folder expanded="1" path="animation-folder/ScoreEstatua1/" />
+        <folder expanded="1" path="animation-folder/ScoreEstatua2/" />
+        <folder expanded="1" path="animation-folder/ColarCaral/" />
+        <folder expanded="1" path="animation-folder/PrimeiroColarCaral/" />
+        <folder expanded="1" path="animation-folder/Plataformas/" />
+        <folder expanded="1" path="animation-folder/PiramideCaral/" />
+        <folder expanded="1" path="animation-folder/CaledárioMaia/" />
+        <folder expanded="1" path="animation-folder/EstatuasMaia/" />
+        <folder expanded="1" path="animation-folder/EscriturasMaia/" />
+        <folder expanded="1" path="animation-folder/FarinhaMilho/" />
+        <folder expanded="1" path="animation-folder/VasosMaia/" />
+        <folder expanded="1" path="animation-folder/PrimeiraFarinhaMilho/" />
+        <folder expanded="1" path="animation-folder/PoderMaia/" />
+        <folder expanded="1" path="animation-folder/PlataformaMaia/" />
+        <folder expanded="1" path="animation-folder/PirâmideMaia/" />
+        <folder expanded="1" path="animation-folder/BlocosMaia1/" />
+        <folder expanded="1" path="animation-folder/DeusMorteMaia/" />
+        <folder expanded="1" path="animation-folder/FantasmaMaia/" />
+        <folder expanded="1" path="animation-folder/EspinhoMaia/" />
+        <folder expanded="1" path="animation-folder/FalaExtraMaias/" />
+        <folder expanded="1" path="animation-folder/Arma/" />
+        <folder expanded="1" path="animation-folder/ColarAsteca/" />
+        <folder expanded="1" path="animation-folder/Cobra/" />
+        <folder expanded="1" path="animation-folder/EstatuaAsteca/" />
+        <folder expanded="1" path="animation-folder/CalendarioAsteca/" />
+        <folder expanded="1" path="animation-folder/MilhoVida/" />
+        <folder expanded="1" path="animation-folder/PoderAsteca/" />
+        <folder expanded="1" path="animation-folder/PlataformaAsteca/" />
+        <folder expanded="1" path="animation-folder/Chinampas/" />
+        <folder expanded="1" path="animation-folder/PiramideSol/" />
+        <folder expanded="1" path="animation-folder/PlatPiramideAsteca/" />
+        <folder expanded="1" path="animation-folder/Espanhol/" />
+        <folder expanded="1" path="animation-folder/SolAsteca/" />
+        <folder expanded="1" path="animation-folder/PiramideAsteca1/" />
+        <folder expanded="1" path="animation-folder/PiramideAsteca2/" />
+        <folder expanded="1" path="animation-folder/PiramdeAsteca3/" />
+        <folder expanded="1" path="animation-folder/HomemBarco/" />
+        <folder expanded="1" path="animation-folder/ButtonBack/" />
+        <folder expanded="1" path="animation-folder/ButtonBack2/" />
+        <folder expanded="1" path="animation-folder/LogoMarca/" />
+        <folder expanded="1" path="animation-folder/Text_Cred/" />
+        <folder expanded="1" path="animation-folder/ColarEgito/" />
+        <folder expanded="1" path="animation-folder/PocaoEgito/" />
+        <folder expanded="1" path="animation-folder/Urna/" />
+        <folder expanded="1" path="animation-folder/Escaravelho/" />
+        <folder expanded="1" path="animation-folder/Papiro/" />
+        <folder expanded="1" path="animation-folder/PrimeiroEscaravelho/" />
+        <folder expanded="1" path="animation-folder/PoderEgito/" />
+        <folder expanded="1" path="animation-folder/Mumia/" />
+        <folder expanded="1" path="animation-folder/Seth/" />
+        <folder expanded="1" path="animation-folder/Sarcofago/" />
+        <folder expanded="1" path="animation-folder/APiramideEgito/" />
+        <folder expanded="1" path="animation-folder/PiramidesEgito/" />
+        <folder expanded="1" path="animation-folder/CoqueirosEgito/" />
+        <folder expanded="1" path="animation-folder/Fundo_Esc/" />
+        <folder expanded="1" path="animation-folder/Plataformas_Ext/" />
+        <folder expanded="1" path="animation-folder/BlocoTijolos/" />
+        <folder expanded="1" path="animation-folder/Plataformas_Int/" />
+        <folder expanded="1" path="animation-folder/Escada/" />
+        <folder expanded="1" path="animation-folder/Armadilha/" />
+        <folder expanded="1" path="animation-folder/Plataformas_IntFake/" />
+        <folder expanded="1" path="animation-folder/Extra/" />
+        <folder expanded="1" path="animation-folder/BarreiraInvisible/" />
+        <folder expanded="1" path="animation-folder/FalaExtraPiramide/" />
+        <folder expanded="1" path="animation-folder/TelaGame/" />
+        <folder expanded="1" path="animation-folder/Marcacao1/" />
+        <folder expanded="1" path="animation-folder/Marcacao2/" />
+        <folder expanded="1" path="animation-folder/Marcacao3/" />
+        <folder expanded="1" path="animation-folder/Marcacao4/" />
+        <folder expanded="1" path="animation-folder/Seta1/" />
+        <folder expanded="1" path="animation-folder/Transicao/" />
+        <folder expanded="1" path="animation-folder/Morte/" />
+        <folder expanded="1" path="animation-folder/vireDireita/" />
+        <folder expanded="1" path="animation-folder/vireEsquerda/" />
+        <folder expanded="1" path="animation-folder/Personagem/" />
+        <folder expanded="1" path="animation-folder/IfaldaFalando/" />
+        <folder expanded="1" path="animation-folder/BarraFala/" />
+        <folder expanded="1" path="animation-folder/BTTContinuar/" />
+        <folder expanded="1" path="animation-folder/BTTContinuar2/" />
+        <folder expanded="1" path="animation-folder/EspacoCivilizacao/" />
+        <folder expanded="1" path="animation-folder/SethFalando/" />
+        <folder expanded="1" path="animation-folder/Bloco/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/PoderLancado/" />
+    </folders-expanded>
+</c2uistate>

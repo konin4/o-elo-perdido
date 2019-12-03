@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eEgito_Ext</name>
+    <events>
+        <include>eHUD</include>
+        <include>eIfalda</include>
+        <include>eCamera</include>
+        <event-block sid="129979046444742">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="504886015667040" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="115195147239276" type="Fala">
+                    <param id="0" name="Family name">&quot;Source Sans Pro&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&amp;display=swap&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="469765070053756" type="BoxCivilizacao">
+                    <param id="0" name="Family name">&quot;Source Sans Pro&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&amp;display=swap&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="695577564384602" type="Audio">
+                    <param id="0" name="Audio file">quest for the golden cat idol</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;faseegitoext&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="231401039947167">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="937704594194913" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="907802897905650" type="INVENTQuipo">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="377576209953633">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="838343029109065" type="Personagem">
+                    <param id="0" name="Object">APiramideEgito</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="736392404661328" type="Audio">
+                    <param id="0" name="Tag">&quot;faseegitoext&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="584455583479868" type="System">
+                    <param id="0" name="Layout">Egito_Int</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="546535137518838" title="RecompensasE1">
+            <sub-events>
+                <event-block sid="797203758637804">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="244617499327125" type="Personagem">
+                            <param id="0" name="Object">Urna</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="125562018176442" type="Audio">
+                            <param id="0" name="Audio file">(coleta de objetos)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;coleta&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="180362996211060" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="848725018556064" type="Urna" />
+                    </actions>
+                </event-block>
+                <event-block sid="570850338690507">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="661693798932087" type="Personagem">
+                            <param id="0" name="Object">PocaoEgito</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="546586116974896" type="Audio">
+                            <param id="0" name="Audio file">(coleta de objetos)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;coleta&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="997023203125329" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="731724005643423" type="PocaoEgito" />
+                    </actions>
+                </event-block>
+                <event-block sid="165494227145670">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="208242688903790" type="Personagem">
+                            <param id="0" name="Object">Escaravelho</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="723183031508394" type="Audio">
+                            <param id="0" name="Audio file">(coleta de objetos)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;coleta&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="985369064548034" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="301468999748674" type="Escaravelho" />
+                    </actions>
+                </event-block>
+                <event-block sid="228252832594045">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="857252044762210" type="Personagem">
+                            <param id="0" name="Object">ColarEgito</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="991287790621116" type="Audio">
+                            <param id="0" name="Audio file">(coleta de objetos)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;coleta&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="429833701222245" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="442080604352397" type="ColarEgito" />
+                    </actions>
+                </event-block>
+                <event-block sid="153560326886058">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="877309666812543" type="Personagem">
+                            <param id="0" name="Object">PrimeiroEscaravelho</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="331699966865157" type="Audio">
+                            <param id="0" name="Audio file">(coleta de objetos)</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;coleta&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="880483215561982" type="PrimeiroEscaravelho" />
+                        <action id="-10" name="Add to" sid="955030003303175" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="641208053427082" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="669559366029048" type="System">
+                            <param id="0" name="Layer">8</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="453559933191379" type="Fala">
+                            <param id="0" name="Text">&quot;Hmm. Um escaravelho! Os antigos egípcios utilizavam esse inseto em alguns de seus rituais, e, também como amuleto. Vou recolhê-lo, espero que dê sorte.&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="615943893397739" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="346514931804719" type="BarraFala">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="562672206054223" type="Fala">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="550966235154884" type="IfaldaFalando">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="316758581424685" type="System">
+                            <param id="0" name="Layer">8</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="788564594402519" type="System">
+                            <param id="0" name="Time scale">1.0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="520821358625628" type="Mochila">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="453967619194515" title="FalasE1">
+            <sub-events>
+                <event-block sid="861523149836998">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="602928323348367" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="153773344356176" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="525205401514895" type="System">
+                            <param id="0" name="Layer">4</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="399569011513020" type="BoxCivilizacao">
+                            <param id="0" name="Text">&quot;Necrópole de Gizé, Egito&#x0D;&#x0A;2330 a.C.&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="463832711240583" type="EspacoCivilizacao">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="839509920181247" type="BoxCivilizacao">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="867839896964025" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="316539674039500" type="BoxCivilizacao">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="148201284284846" type="EspacoCivilizacao">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-42" name="Signal" sid="134253173192758" type="System">
+                            <param id="0" name="Tag">&quot;Box2&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="721960622940547">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="556586902470449" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-41" name="Wait for signal" sid="251396417502757" type="System">
+                            <param id="0" name="Tag">&quot;Box2&quot;</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="138808584130042" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="834640197039759" type="System">
+                            <param id="0" name="Layer">8</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="251778114719990" type="BTTContinuar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="902691361777390" type="Fala">
+                            <param id="0" name="Text">&quot;Oh céus! Aquelas são as pirâmides de Gizé, como eu vim parar no Egito? Estou viajando pelo passado. Agora eu terei a chance de solucionar alguns mistérios.&quot;</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="669635777288264" type="Mochila">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="642108961202336" type="BTTContinuar">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="975838654030347">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="540115175212361" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">BTTContinuar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="-15" name="Set visible" sid="634094044952966" type="BarraFala">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="509828399366073" type="Fala">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action disabled="1" id="-15" name="Set visible" sid="248665935077065" type="IfaldaFalando">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="830143250067487" type="System">
+                            <param id="0" name="Layer">8</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="631597395258656" type="System">
+                            <param id="0" name="Layer">7</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="950853837021449" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="274064338197012" type="System">
+                            <param id="0" name="Layer">4</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="104060919878524" type="System">
+                            <param id="0" name="Time scale">1.0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="346667788941988" type="Mochila">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="618617401325734" title="DanosE1">
+            <sub-events>
+                <event-block sid="707704996992275">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="626257721162919" type="Personagem">
+                            <param id="0" name="Object">MarEgito</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="726348705906159" type="Personagem" />
+                        <action id="-15" name="Set visible" sid="764025782132591" type="Transicao">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="294477861979147" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="678259764283682" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
